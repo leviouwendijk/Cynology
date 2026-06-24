@@ -177,7 +177,7 @@ public enum PrebuiltPrograms {
 
         public static func pressure() -> ProgramSection {
             ProgramSection(
-                title: "Drukwerk: vorming, sturing, management",
+                title: "Drukwerk: vorming, sturing, restrictie",
                 plans: [
                     FramePlan(
                         id: "press_leash_opp",
@@ -268,7 +268,7 @@ public enum PrebuiltPrograms {
                         id: "engage_context_signals",
                         frame: .custom(.init(id: "context_signals", label: "Contextsignalen: start en stop")),
                         concepts: [
-                            .management(.management),
+                            .restriction(.setting),
                             .engagement(.engagement),
                         ],
                         notes: "Opzet trainingscontext door signalen voor begin en eind",

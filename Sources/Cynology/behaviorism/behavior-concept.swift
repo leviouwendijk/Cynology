@@ -3,7 +3,7 @@ import Foundation
 public enum BehaviorConcept: Sendable, Codable, Hashable, CaseIterable {
     case preparation(Preparation)
     case assessment(Assessment)
-    case management(Management)
+    case restriction(Restriction)
     case behaviorism(Behaviorism)
     case communication(Communication)
     case motivation(Motivation)
@@ -18,7 +18,7 @@ public enum BehaviorConcept: Sendable, Codable, Hashable, CaseIterable {
     public enum Taxonomy: String, Sendable, Codable, Hashable, CaseIterable {
         case preparation
         case assessment
-        case management
+        case restriction
         case behaviorism
         case communication
         case motivation
@@ -61,10 +61,11 @@ public enum BehaviorConcept: Sendable, Codable, Hashable, CaseIterable {
 
     /// Environmental control and threshold management.
     /// Parameterize threshold_work with ThresholdProfile (above/near_at/below).
-    public enum Management: String, Sendable, Codable, Hashable, CaseIterable {
-        case management             // restriction, preventing problem rehearsal
+    public enum Restriction: String, Sendable, Codable, Hashable, CaseIterable {
+        case planning             // restriction, preventing problem rehearsal
+        case setting             // restriction, preventing problem rehearsal
         case threshold_work         // operating relative to the dog's threshold
-        case emergency_management   // forced turn-away or lure when above threshold
+        case emergency_handling   // forced turn-away or lure when above threshold
     }
 
     /// Learning theory. Pure mechanisms — what IS, not what to DO.
@@ -164,7 +165,7 @@ public enum BehaviorConcept: Sendable, Codable, Hashable, CaseIterable {
         switch self {
         case .preparation:           return .preparation
         case .assessment:            return .assessment
-        case .management:            return .management
+        case .restriction:            return .restriction
         case .behaviorism:           return .behaviorism
         case .communication:         return .communication
         case .motivation:            return .motivation
@@ -180,7 +181,7 @@ public enum BehaviorConcept: Sendable, Codable, Hashable, CaseIterable {
         switch self {
         case .preparation(let v):           return v.rawValue
         case .assessment(let v):            return v.rawValue
-        case .management(let v):            return v.rawValue
+        case .restriction(let v):            return v.rawValue
         case .behaviorism(let v):           return v.rawValue
         case .communication(let v):         return v.rawValue
         case .motivation(let v):            return v.rawValue
@@ -216,9 +217,10 @@ public enum BehaviorConcept: Sendable, Codable, Hashable, CaseIterable {
         case .assessment(.drive_evaluation):                return "Drijf-evaluatie"
         case .assessment(.behavioral_history):              return "Gedragshistorie"
 
-        case .management(.management):                      return "Management (restrictie)"
-        case .management(.threshold_work):                  return "Drempelwaarde-werk"
-        case .management(.emergency_management):            return "Nood-management"
+        case .restriction(.planning):                      return "Plannen"
+        case .restriction(.setting):                       return "Omgeving"
+        case .restriction(.threshold_work):                return "Drempelwaarde"
+        case .restriction(.emergency_handling):            return "Nood-handelingen"
 
         case .behaviorism(.classical_conditioning):         return "Klassieke conditionering"
         case .behaviorism(.operant_conditioning):           return "Operante conditionering"
@@ -288,7 +290,7 @@ public enum BehaviorConcept: Sendable, Codable, Hashable, CaseIterable {
     public init?(slug: String) {
         if let v = Preparation(rawValue: slug)          { self = .preparation(v);           return }
         if let v = Assessment(rawValue: slug)           { self = .assessment(v);            return }
-        if let v = Management(rawValue: slug)           { self = .management(v);            return }
+        if let v = Restriction(rawValue: slug)           { self = .restriction(v);            return }
         if let v = Behaviorism(rawValue: slug)          { self = .behaviorism(v);           return }
         if let v = Communication(rawValue: slug)        { self = .communication(v);         return }
         if let v = Motivation(rawValue: slug)           { self = .motivation(v);            return }
@@ -303,7 +305,7 @@ public enum BehaviorConcept: Sendable, Codable, Hashable, CaseIterable {
     public static var allCases: [BehaviorConcept] {
         Preparation.allCases.map(Self.preparation)
             + Assessment.allCases.map(Self.assessment)
-            + Management.allCases.map(Self.management)
+            + Restriction.allCases.map(Self.restriction)
             + Behaviorism.allCases.map(Self.behaviorism)
             + Communication.allCases.map(Self.communication)
             + Motivation.allCases.map(Self.motivation)
