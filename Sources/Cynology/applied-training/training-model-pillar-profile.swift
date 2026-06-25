@@ -110,7 +110,7 @@ public extension TrainingModelPillarProfile {
         case .communication:
             return .init(
                 pillar: pillar,
-                summary: "Duidelijke feedback en voorspelbare informatie tussen geleider en hond.",
+                summary: "Duidelijke feedback en voorspelbare bedoelingen tussen geleider en hond.",
                 definition: "Communicatie maakt herkenbaar welke keuze, prikkel of overgang betekenis krijgt.",
                 function: "Maakt markeren, differentiëren, begrenzen en herhalen scherper.",
                 concepts: [
@@ -128,7 +128,7 @@ public extension TrainingModelPillarProfile {
         case .pressure:
             return .init(
                 pillar: pillar,
-                summary: "Druk begrijpelijk maken als richtinggevend en begrensbaar communicatiemiddel.",
+                summary: "Druk begrijpelijk maken als richtinggevend en begrenzend communicatiemiddel.",
                 definition: "Drukbegrip betekent dat de hond leert hoe druk ontstaat, vermindert en stopt.",
                 function: "Maakt lijn-, lichaams- en ruimtelijke druk leerbaar in plaats van conflictueel.",
                 concepts: [
