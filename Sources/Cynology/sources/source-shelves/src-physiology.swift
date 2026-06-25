@@ -90,6 +90,8 @@ public extension CynologySources {
         // old: CynologyClinicalSource.hsu_sun_factors_aggressive_responses_pet_dogs
         case aggressive_responses_pet_dogs
 
+        case human_directed_aggression_professional_opinion
+
         // MARK: - ProblemBehavior
 
         // old: CynologyClinicalSource.dorey_tobias_udell_wynne_decreasing_problem_behavior_functional_analysis
@@ -160,6 +162,8 @@ public extension CynologySources {
 
         // old: CynologyWorkingDogSource.cocco_sechi_sisia_pinna_parpaglia_rizzo_arrigo_giannetto_piccione_arfuso_working_dog_stress_response_correction
         case working_dog_stress_response_correction
+
+        case heart_rate_variability_scent_work
 
         // MARK: - CanineWelfare
 
@@ -1034,6 +1038,24 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .human_directed_aggression_professional_opinion:
+                return CynologySources.entry(
+                    title: "Factors influencing the expression of human directed dog aggression. A qualitative study of professional opinion",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2026.106999"
+                    ),
+                    authors: CynologySources.authors(
+                        "Helen Howell, Ann Baslington-Davies, Daniel S. Mills, Todd E. Hogue"
+                    ),
+                    date: CynologySources.published(
+                        "2026-07"
+                    ),
+                    doi: "10.1016/j.applanim.2026.106999",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .functional_analysis_problem_behavior:
                 return CynologySources.entry(
                     title: "Decreasing Dog Problem Behavior with Functional Analysis: Linking Diagnoses to Treatment",
@@ -1407,6 +1429,24 @@ public extension CynologySources {
                         "2026-02-27"
                     ),
                     doi: "10.3390/ani16050739",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .heart_rate_variability_scent_work:
+                return CynologySources.entry(
+                    title: "Heart rate variability and behaviour in dogs during and after scent work",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2026.106986"
+                    ),
+                    authors: CynologySources.authors(
+                        "Jade Fountain, Todd J. McWhorter, Marie-Claire Seeley, Aidan D. Bindoff, Kimberley Handley, Robert Hewings, Susan J. Hazel"
+                    ),
+                    date: CynologySources.published(
+                        "2026-06"
+                    ),
+                    doi: "10.1016/j.applanim.2026.106986",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -3684,6 +3724,14 @@ public extension CynologySources {
                     .problem_behavior
                 )
 
+            case .human_directed_aggression_professional_opinion:
+                return .cynology(
+                    .clinical_behavior,
+                    .aggression,
+                    .problem_behavior,
+                    .methodology
+                )
+
             case .functional_analysis_problem_behavior,
                  .food_guarding_functional_analysis,
                  .training_effects_dog_behavior,
@@ -3726,6 +3774,14 @@ public extension CynologySources {
                     .working_dogs,
                     .stress,
                     .physiology
+                )
+
+            case .heart_rate_variability_scent_work:
+                return .cynology(
+                    .physiology,
+                    .welfare,
+                    .engagement,
+                    .canine_behavior
                 )
 
             case .not_all_dogs_equal,

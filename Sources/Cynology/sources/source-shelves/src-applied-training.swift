@@ -60,6 +60,11 @@ public extension CynologySources {
         // old: CynologyTrainingSource.palmer_albohn_matsick_wynne_gender_norms_dominance_theory_aversive_training_methods
         case gender_norms_dominance_aversive_methods
 
+        // MARK: - OperantChoiceAndScentwork
+
+        case default_variant_behaviour_operant_training
+        case scentwork_traditional_training_welfare_bond
+
         // MARK: - BehaviorModification
 
         // old: CynologyTrainingSource.shnookal_tepper_howell_bennett_counterconditioning_systematic_review
@@ -138,6 +143,8 @@ public extension CynologySources {
 
         // old: CynologyWorkingDogSource.fratt_hamre_burak_mutoro_nootbaar_wykstra_differential_reinforcement_extinction_cheetah_scat_detection_dogs
         case cheetah_scat_detection_accuracy
+
+        case exercise_intensity_duration_odor_detection_performance
 
         // MARK: - WorkingDogBooks
 
@@ -449,6 +456,42 @@ public extension CynologySources {
                         "2026-05"
                     ),
                     doi: "10.1080/08927936.2026.2667006",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .default_variant_behaviour_operant_training:
+                return CynologySources.entry(
+                    title: "Behavioural adaptation and stress regulation in operant training: The role of the Default Variant of Behaviour",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2026.106971"
+                    ),
+                    authors: CynologySources.authors(
+                        "Markéta Lukavská, Veronika Rudolfová, Tomáš Bušina, Petra Eretová, Tereza Nekovářová"
+                    ),
+                    date: CynologySources.published(
+                        "2026-06"
+                    ),
+                    doi: "10.1016/j.applanim.2026.106971",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .scentwork_traditional_training_welfare_bond:
+                return CynologySources.entry(
+                    title: "Effects of scentwork and traditional training classes on dog welfare, behavior, and human-dog bond",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2026.106924"
+                    ),
+                    authors: CynologySources.authors(
+                        "Sky Sobol, Seana Dowling-Guyer"
+                    ),
+                    date: CynologySources.published(
+                        "2026-04"
+                    ),
+                    doi: "10.1016/j.applanim.2026.106924",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -845,6 +888,24 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .exercise_intensity_duration_odor_detection_performance:
+                return CynologySources.entry(
+                    title: "A preliminary study on the impacts of exercise intensity and duration on gastrointestinal temperature and odor detection performance of dogs",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2026.106970"
+                    ),
+                    authors: CynologySources.authors(
+                        "Liza Rothkoff, Jörg Schultz, Edgar O. Aviles-Rosa, Michele N. Maughan, Eric Best, Nathaniel J. Hall"
+                    ),
+                    date: CynologySources.published(
+                        "2026-06"
+                    ),
+                    doi: "10.1016/j.applanim.2026.106970",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .der_schutzhund:
                 return CynologySources.entry(
                     title: "Der Schutzhund: The Protection Dog",
@@ -939,6 +1000,22 @@ public extension CynologySources {
                     .welfare
                 )
 
+            case .default_variant_behaviour_operant_training:
+                return .cynology(
+                    .operant_conditioning,
+                    .training_methods,
+                    .stress,
+                    .welfare
+                )
+
+            case .scentwork_traditional_training_welfare_bond:
+                return .cynology(
+                    .training_methods,
+                    .welfare,
+                    .human_dog_relationship,
+                    .engagement
+                )
+
             case .counterconditioning_interventions_review,
                  .behavior_modification_medication_aggression,
                  .on_lead_aggressive_behaviours_advice,
@@ -992,6 +1069,14 @@ public extension CynologySources {
                     .working_dogs,
                     .training_methods,
                     .reinforcement
+                )
+
+            case .exercise_intensity_duration_odor_detection_performance:
+                return .cynology(
+                    .working_dogs,
+                    .physiology,
+                    .assessment,
+                    .stress
                 )
 
             case .animal_welfare_science_working_dogs:

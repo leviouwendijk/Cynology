@@ -176,6 +176,8 @@ public extension CynologySources {
         // old: CynologyCommunicationSource.warda_interspecies_emotional_labour_guide_dog_work
         case interspecies_emotional_labour
 
+        case trainability_proxy_attachment_construct_validity
+
         // MARK: - AdditionalDogBooks
 
         // old: CynologyCommunicationSource.reed_canine_anatomy_and_physiology
@@ -1192,6 +1194,24 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .trainability_proxy_attachment_construct_validity:
+                return CynologySources.entry(
+                    title: "Is trainability a proxy for attachment? Revisiting construct validity in canine–human bond research",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2026.107007"
+                    ),
+                    authors: CynologySources.authors(
+                        "Muhammad Fadhlirrahman Latief, Baharuddin Baharuddin, Amelia Ramadhani Anshar"
+                    ),
+                    date: CynologySources.published(
+                        "2026-07"
+                    ),
+                    doi: "10.1016/j.applanim.2026.107007",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .canine_anatomy_and_physiology:
                 return CynologySources.entry(
                     title: "Canine Anatomy and Physiology: A Practical Approach",
@@ -1368,6 +1388,14 @@ public extension CynologySources {
                     .human_dog_relationship,
                     .communication,
                     .training_methods
+                )
+
+            case .trainability_proxy_attachment_construct_validity:
+                return .cynology(
+                    .human_dog_relationship,
+                    .assessment,
+                    .methodology,
+                    .canine_behavior
                 )
 
             case .canine_anatomy_and_physiology,
