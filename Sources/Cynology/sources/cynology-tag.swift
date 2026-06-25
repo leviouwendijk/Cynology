@@ -15,6 +15,7 @@ public enum CynologyTag: String, Sendable, Codable, Hashable, CaseIterable, Refe
 
     case affective_state
     case motivation
+    case impulsivity
     case frustration_tolerance
     case resilience
     case challenge_calibration

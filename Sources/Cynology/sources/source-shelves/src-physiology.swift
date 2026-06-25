@@ -91,6 +91,12 @@ public extension CynologySources {
         case aggressive_responses_pet_dogs
 
         case human_directed_aggression_professional_opinion
+        case aggressive_reactivity_self_control
+
+        // MARK: - Impulsivity
+
+        case canine_hyperactivity_impulsivity_inattention_adhd
+        case repetitive_behaviour_adhd_like_environment
 
         // MARK: - ProblemBehavior
 
@@ -665,17 +671,17 @@ public extension CynologySources {
 
             case .castration_aggression_fear:
                 return CynologySources.entry(
-                    title: "The Relationship Between Castration, Aggression and Fear-Related Behaviour in Domestic Dogs: Breed Group Effects",
+                    title: "From \"Husky\" to \"Bulldog\"– behavioural correlates between castration and breed groups in the domestic dog (Canis lupus familiaris)",
                     location: CynologySources.doi_location(
-                        "10.3390/ani13172798"
+                        "10.1186/s12917-024-04097-6"
                     ),
                     authors: CynologySources.authors(
-                        "B. Kolkmeyer, M. Baum, V. Warlich, V. Zach, U. Gansloßer"
+                        "C.A. Kolkmeyer, J. Baum, N. Warlich-Zach, U. Gansloßer"
                     ),
                     date: CynologySources.published(
-                        "2023-08-31"
+                        "2024-06-03"
                     ),
-                    doi: "10.3390/ani13172798",
+                    doi: "10.1186/s12917-024-04097-6",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -1051,6 +1057,60 @@ public extension CynologySources {
                         "2026-07"
                     ),
                     doi: "10.1016/j.applanim.2026.106999",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .aggressive_reactivity_self_control:
+                return CynologySources.entry(
+                    title: "Dogs Exhibiting High Levels of Aggressive Reactivity Show Impaired Self-Control Abilities",
+                    location: CynologySources.doi_location(
+                        "10.3389/fvets.2022.869068"
+                    ),
+                    authors: CynologySources.authors(
+                        "Elena Gobbo, Manja Zupan Šemrov"
+                    ),
+                    date: CynologySources.published(
+                        "2022-03-24"
+                    ),
+                    doi: "10.3389/fvets.2022.869068",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .canine_hyperactivity_impulsivity_inattention_adhd:
+                return CynologySources.entry(
+                    title: "Canine Hyperactivity, Impulsivity, and Inattention Share Similar Demographic Risk Factors and Behavioural Comorbidities with Human ADHD",
+                    location: CynologySources.doi_location(
+                        "10.1038/s41398-021-01626-x"
+                    ),
+                    authors: CynologySources.authors(
+                        "Sini Sulkama, Jenni Puurunen, Milla Salonen, Salla Mikkola, Emma Hakanen, César Araujo, Hannes Lohi"
+                    ),
+                    date: CynologySources.published(
+                        "2021-10-01"
+                    ),
+                    doi: "10.1038/s41398-021-01626-x",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .repetitive_behaviour_adhd_like_environment:
+                return CynologySources.entry(
+                    title: "Aggressiveness, ADHD-like Behaviour, and Environment Influence Repetitive Behaviour in Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1038/s41598-022-07443-6"
+                    ),
+                    authors: CynologySources.authors(
+                        "Sini Sulkama, Milla Salonen, Salla Mikkola, Emma Hakanen, Jenni Puurunen, César Araujo, Hannes Lohi"
+                    ),
+                    date: CynologySources.published(
+                        "2022-03-24"
+                    ),
+                    doi: "10.1038/s41598-022-07443-6",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -3672,12 +3732,19 @@ public extension CynologySources {
                     .welfare
                 )
 
-            case .personality_unwanted_behavior_survey,
-                 .castration_aggression_fear:
+            case .personality_unwanted_behavior_survey:
                 return .cynology(
                     .clinical_behavior,
                     .assessment,
                     .temperament
+                )
+
+            case .castration_aggression_fear:
+                return .cynology(
+                    .clinical_behavior,
+                    .aggression,
+                    .stress,
+                    .assessment
                 )
 
             case .temperament_cortisol_serotonin:
@@ -3730,6 +3797,33 @@ public extension CynologySources {
                     .aggression,
                     .problem_behavior,
                     .methodology
+                )
+
+            case .aggressive_reactivity_self_control:
+                return .cynology(
+                    .clinical_behavior,
+                    .aggression,
+                    .problem_behavior,
+                    .impulsivity,
+                    .assessment
+                )
+
+            case .canine_hyperactivity_impulsivity_inattention_adhd:
+                return .cynology(
+                    .clinical_behavior,
+                    .problem_behavior,
+                    .impulsivity,
+                    .assessment,
+                    .canine_behavior
+                )
+
+            case .repetitive_behaviour_adhd_like_environment:
+                return .cynology(
+                    .clinical_behavior,
+                    .problem_behavior,
+                    .impulsivity,
+                    .canine_behavior,
+                    .welfare
                 )
 
             case .functional_analysis_problem_behavior,
@@ -4026,6 +4120,7 @@ public extension CynologySources {
                 return .cynology(
                     .motivation,
                     .frustration_tolerance,
+                    .impulsivity,
                     .assessment
                 )
             }

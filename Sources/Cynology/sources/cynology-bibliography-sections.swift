@@ -132,7 +132,8 @@ public enum CynologyBibliographySections {
             include: .cynology(
                 .methodology,
                 .assessment,
-                .temperament
+                .temperament,
+                .impulsivity
             ),
             match: .any,
             sort: .title_ascending

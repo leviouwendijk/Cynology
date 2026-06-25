@@ -124,6 +124,10 @@ public extension CynologySources {
         // old: CynologyMethodologySource.riemer_mills_wright_impulsive_for_life_dogs
         case impulsive_for_life
 
+        case dias_development_validation
+        case behavioural_physiological_correlates_impulsivity
+        case impulsivity_behaviour_problems_rst
+
         // MARK: - WorkingDogs
 
         // old: CynologyWorkingDogSource.hall_johnston_bray_otto_maclean_udell_working_dog_training_twenty_first_century
@@ -780,6 +784,59 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .dias_development_validation:
+                return CynologySources.entry(
+                    title: "Development and Validation of a Psychometric Tool for Assessing Impulsivity in the Domestic Dog (Canis familiaris)",
+                    location: CynologySources.web_location(
+                        "https://escholarship.org/uc/item/7pb1j56q"
+                    ),
+                    authors: CynologySources.authors(
+                        "Hannah F. Wright, Daniel S. Mills, Petra M. J. Pollux"
+                    ),
+                    date: CynologySources.published(
+                        "2011"
+                    ),
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .behavioural_physiological_correlates_impulsivity:
+                return CynologySources.entry(
+                    title: "Behavioural and Physiological Correlates of Impulsivity in the Domestic Dog (Canis familiaris)",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.physbeh.2011.09.019"
+                    ),
+                    authors: CynologySources.authors(
+                        "Hannah F. Wright, Daniel S. Mills, Petra M. J. Pollux"
+                    ),
+                    date: CynologySources.published(
+                        "2012"
+                    ),
+                    doi: "10.1016/j.physbeh.2011.09.019",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .impulsivity_behaviour_problems_rst:
+                return CynologySources.entry(
+                    title: "Impulsivity and Behaviour Problems in Dogs: A Reinforcement Sensitivity Theory Perspective",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.beproc.2018.03.012"
+                    ),
+                    authors: CynologySources.authors(
+                        "Patrizia Piotti, Liam Paul Satchell, Tom Steven Lockhart"
+                    ),
+                    date: CynologySources.published(
+                        "2018-06-01"
+                    ),
+                    doi: "10.1016/j.beproc.2018.03.012",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .working_dog_training_twenty_first_century:
                 return CynologySources.entry(
                     title: "Working Dog Training for the Twenty-First Century",
@@ -1041,12 +1098,30 @@ public extension CynologySources {
                  .cbarq_development_validation,
                  .shortened_cbarq_validation,
                  .temporal_consistency_guide_dog_puppies,
-                 .dog_behavior_covaries_morphology,
-                 .impulsive_for_life:
+                 .dog_behavior_covaries_morphology:
                 return .cynology(
                     .methodology,
                     .assessment,
                     .temperament
+                )
+
+            case .dias_development_validation,
+                 .behavioural_physiological_correlates_impulsivity,
+                 .impulsive_for_life:
+                return .cynology(
+                    .methodology,
+                    .assessment,
+                    .temperament,
+                    .impulsivity
+                )
+
+            case .impulsivity_behaviour_problems_rst:
+                return .cynology(
+                    .methodology,
+                    .assessment,
+                    .temperament,
+                    .impulsivity,
+                    .problem_behavior
                 )
 
             case .modified_cbarq_working_dogs:

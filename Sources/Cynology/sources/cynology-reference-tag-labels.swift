@@ -12,6 +12,7 @@ public enum CynologyReferenceTagLabels {
 
         CynologyTag.affective_state.tag.id: "Affectieve toestand (gemoed)",
         CynologyTag.motivation.tag.id: "Motivatie",
+        CynologyTag.impulsivity.tag.id: "Impulsiviteit",
         CynologyTag.frustration_tolerance.tag.id: "Frustratie",
         CynologyTag.resilience.tag.id: "Weerbaarheid",
         CynologyTag.challenge_calibration.tag.id: "Uitdaging (analoog)",
