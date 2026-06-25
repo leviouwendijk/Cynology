@@ -137,41 +137,34 @@ public extension TrainingModelPillar {
         switch self {
         case .restriction:
             return [
-                .predictability,
+                .stability,
                 .safety,
-                .stability
             ]
 
         case .motivation:
             return [
                 .attraction,
-                .optimism
             ]
 
         case .engagement:
             return [
                 .bonding,
-                .stability,
-                .attraction
             ]
 
         case .communication:
             return [
                 .predictability,
                 .routine,
-                .bonding
             ]
 
         case .pressure:
             return [
                 .resilience,
                 .recovery,
-                .agency
             ]
 
         case .frames:
             return [
-                .competence,
                 .ability,
                 .agency
             ]
@@ -179,32 +172,28 @@ public extension TrainingModelPillar {
         case .association:
             return [
                 .valence,
-                .safety,
                 .optimism,
-                .predictability
+                .safety,
             ]
 
         case .signaling:
             return [
                 .predictability,
-                .routine,
-                .ability
+                .routine
             ]
 
         case .difficulty:
             return [
-                .freedom,
-                .ability,
+                .competence,
                 .resilience,
                 .agency
             ]
 
         case .reliability:
             return [
-                .antifragility,
+                .freedom,
                 .stability,
-                .recovery,
-                .predictability
+                .antifragility,
             ]
         }
     }
