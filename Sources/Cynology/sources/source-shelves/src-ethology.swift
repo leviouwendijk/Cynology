@@ -124,6 +124,8 @@ public extension CynologySources {
         // old: CynologyCommunicationSource.puurunen_hakanen_salonen_mikkola_sulkama_araujo_lohi_inadequate_socialisation_social_fearfulness
         case inadequate_socialisation_fearfulness
 
+        case active_social_life_non_social_fearfulness
+
         // old: CynologyCommunicationSource.wormald_lawrence_carter_fisher_early_social_exposure_reported_aggression
         case early_social_exposure_aggression
 
@@ -889,6 +891,24 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .active_social_life_non_social_fearfulness:
+                return CynologySources.entry(
+                    title: "Active and Social Life Is Associated with Lower Non-Social Fearfulness in Pet Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1038/s41598-020-70722-7"
+                    ),
+                    authors: CynologySources.authors(
+                        "Emma Hakanen, Salla Mikkola, Milla Salonen, Jenni Puurunen, Sini Sulkama, César Araujo, Hannes Lohi"
+                    ),
+                    date: CynologySources.published(
+                        "2020-08-13"
+                    ),
+                    doi: "10.1038/s41598-020-70722-7",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .early_social_exposure_aggression:
                 return CynologySources.entry(
                     title: "Analysis of Correlations between Early Social Exposure and Reported Aggression in the Dog",
@@ -1355,7 +1375,6 @@ public extension CynologySources {
                  .pandemic_puppies_problem_behaviours,
                  .puppy_parties_socialization,
                  .optimising_puppy_socialisation,
-                 .inadequate_socialisation_fearfulness,
                  .early_social_exposure_aggression,
                  .early_life_adversity_aggression_fear,
                  .aggressive_avoidance_first_six_months,
@@ -1368,6 +1387,25 @@ public extension CynologySources {
                     .socialization,
                     .canine_behavior,
                     .welfare
+                )
+
+            case .inadequate_socialisation_fearfulness:
+                return .cynology(
+                    .socialization,
+                    .canine_behavior,
+                    .welfare,
+                    .exercise,
+                    .anxiety
+                )
+
+            case .active_social_life_non_social_fearfulness:
+                return .cynology(
+                    .socialization,
+                    .canine_behavior,
+                    .welfare,
+                    .exercise,
+                    .anxiety,
+                    .noise_sensitivity
                 )
 
             case .dominance_quantitative_analysis,

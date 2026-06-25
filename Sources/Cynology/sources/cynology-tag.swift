@@ -36,6 +36,8 @@ public enum CynologyTag: String, Sendable, Codable, Hashable, CaseIterable, Refe
 
     case stress
     case welfare
+    case exercise
+    case enrichment
     case physiology
     case pain_medical
     case aversives

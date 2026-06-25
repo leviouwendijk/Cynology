@@ -3723,8 +3723,15 @@ public extension CynologySources {
                     .problem_behavior
                 )
 
-            case .early_life_experiences_exercise_anxieties,
-                 .diazepam_anxiety_related_behavior,
+            case .early_life_experiences_exercise_anxieties:
+                return .cynology(
+                    .clinical_behavior,
+                    .anxiety,
+                    .welfare,
+                    .exercise
+                )
+
+            case .diazepam_anxiety_related_behavior,
                  .predictors_fear_anxiety:
                 return .cynology(
                     .clinical_behavior,
@@ -3823,7 +3830,8 @@ public extension CynologySources {
                     .problem_behavior,
                     .impulsivity,
                     .canine_behavior,
-                    .welfare
+                    .welfare,
+                    .exercise
                 )
 
             case .functional_analysis_problem_behavior,
@@ -3893,6 +3901,7 @@ public extension CynologySources {
                  .environmental_enrichment_dog_behaviour:
                 return .cynology(
                     .welfare,
+                    .enrichment,
                     .engagement,
                     .training_methods
                 )
@@ -3976,13 +3985,20 @@ public extension CynologySources {
                  .effort_paradox,
                  .effort_increases_meaning,
                  .breaking_monotony_with_meaning,
-                 .bestial_boredom,
-                 .enrichment_reduces_boredom,
-                 .dogs_contrafreeload:
+                 .bestial_boredom:
                 return .cynology(
                     .engagement,
                     .motivation,
                     .welfare
+                )
+
+            case .enrichment_reduces_boredom,
+                 .dogs_contrafreeload:
+                return .cynology(
+                    .engagement,
+                    .motivation,
+                    .welfare,
+                    .enrichment
                 )
 
             case .challenge_point_motor_learning,
@@ -4000,7 +4016,6 @@ public extension CynologySources {
             case .schedules_of_reinforcement,
                  .frustrative_nonreward,
                  .learned_industriousness,
-                 .learned_industriousness_physical_activity,
                  .persistence_behavior_chain_working_dogs,
                  .partial_reinforcement_omission_effects,
                  .reinforcement_omission_extinction_dogs,
@@ -4010,6 +4025,14 @@ public extension CynologySources {
                     .frustration_tolerance,
                     .resilience,
                     .reinforcement
+                )
+
+            case .learned_industriousness_physical_activity:
+                return .cynology(
+                    .frustration_tolerance,
+                    .resilience,
+                    .reinforcement,
+                    .exercise
                 )
 
             case .psychobiology_resilience,

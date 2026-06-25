@@ -33,6 +33,8 @@ public enum CynologyReferenceTagLabels {
 
         CynologyTag.stress.tag.id: "Stress",
         CynologyTag.welfare.tag.id: "Welzijn",
+        CynologyTag.exercise.tag.id: "Beweging",
+        CynologyTag.enrichment.tag.id: "Verrijking",
         CynologyTag.physiology.tag.id: "Fysiologie",
         CynologyTag.pain_medical.tag.id: "Pijn",
         CynologyTag.aversives.tag.id: "Aversieven",
