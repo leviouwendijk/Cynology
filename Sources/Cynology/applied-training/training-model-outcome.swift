@@ -14,8 +14,8 @@ public enum TrainingModelOutcome: String, Sendable, Codable, Hashable, CaseItera
     case resilience
     case recovery
 
-    case competence
     case ability
+    case competence
     case agency
 
     case valence
@@ -47,10 +47,10 @@ public enum TrainingModelOutcome: String, Sendable, Codable, Hashable, CaseItera
         case .recovery:
             return "Herstel"
 
-        case .competence:
-            return "Competentie"
         case .ability:
             return "Vermogen"
+        case .competence:
+            return "Competentie"
         case .agency:
             return "Autonomie"
 
@@ -84,22 +84,22 @@ public enum TrainingModelOutcome: String, Sendable, Codable, Hashable, CaseItera
             return "De hond herkent terugkerende patronen, volgordes en communicatieve overgangen."
 
         case .resilience:
-            return "De hond leert functioneren terwijl spanning, druk of verstoring aanwezig is."
+            return "De hond kan functioneren ondanks druk of tegenslag."
         case .recovery:
-            return "De hond leert dat spanning kan afnemen en dat herstel na belasting beschikbaar blijft."
+            return "De hond herstelt van belasting of tegenslag."
 
-        case .competence:
-            return "De hond beschikt over concrete gedragsopties waarmee hij situaties kan beantwoorden."
         case .ability:
-            return "De hond kan de aangeleerde respons motorisch, cognitief en contextueel uitvoeren."
+            return "De hond kan de aangeleerde respons motorisch, cognitief en contextueel uitvoeren (vaardigheid)."
+        case .competence:
+            return "De hond beschikt over concrete gedragsopties waarmee hij onafhankelijk situaties kan beantwoorden."
         case .agency:
             return "De hond leert dat eigen gedrag verschil maakt binnen voorspelbare consequenties."
 
         case .valence:
-            return "Prikkels, contexten en sociale situaties krijgen een andere affectieve betekenis."
+            return "Prikkels, contexten en sociale situaties krijgen een specifieke affectieve (emotionele) betekenis."
 
         case .freedom:
-            return "Gedrag blijft functioneren met minder hulp, meer ruimte en grotere keuzevrijheid."
+            return "Verruiming van keuzevrijheid en verrijkende opties."
         case .antifragility:
             return "Gedrag en verwachting worden sterker door gecontroleerde belasting, consequentie en herstel."
         }
