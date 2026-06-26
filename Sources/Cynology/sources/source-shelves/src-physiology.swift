@@ -2258,6 +2258,52 @@ public extension CynologySources {
                     doi: "10.3389/fvets.2020.00508",
                     kind: .article,
                     channel: .peer_reviewed,
+                    reviews: [
+                        ReferenceReview(
+                            id: "managed-field-context-review",
+                            date: CynologySources.published(
+                                "2026-06-26"
+                            ),
+                            title: "Managed field context, not neutral setting",
+                            summary: .summary(
+                                "Useful as a field comparison of training packages, but the setting should not be read as neutral or as a full off-lead test of predatory or aggressive problem behaviour."
+                            ),
+                            entries: [
+                                ReferenceReviewEntry(
+                                    id: "setting-not-neutral",
+                                    kind: .method,
+                                    title: "Context",
+                                    body: .note(
+                                        "The training context included relevant distractors such as livestock and other dogs. For referred dogs with chasing or recall problems, that setting is affectively meaningful rather than neutral."
+                                    )
+                                ),
+                                ReferenceReviewEntry(
+                                    id: "managed-not-naturalistic",
+                                    kind: .limitation,
+                                    title: "Managed exposure",
+                                    body: .note(
+                                        "Dogs were generally close to trainers and managed on long lines, so the study mainly tests cue-response performance under controlled field conditions rather than unrestrained behaviour under full trigger access."
+                                    )
+                                ),
+                                ReferenceReviewEntry(
+                                    id: "package-not-isolated-variable",
+                                    kind: .caution,
+                                    title: "Training package comparison",
+                                    body: .note(
+                                        "The comparison does not isolate electric stimulation as a single variable. It compares broader training packages with different cues, contingencies, trainer styles and handling patterns."
+                                    )
+                                ),
+                                ReferenceReviewEntry(
+                                    id: "usable-interpretation",
+                                    kind: .interpretation,
+                                    title: "Best use in docs",
+                                    body: .note(
+                                        "Use this study as evidence that reward-focused professional training performed at least as well, and in some immediate cue-response measures better, than the industry-nominated e-collar package in this managed field context."
+                                    )
+                                )
+                            ]
+                        )
+                    ],
                     tags: facets
                 )
 
