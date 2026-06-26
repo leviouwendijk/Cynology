@@ -91,6 +91,10 @@ extension CynologySources {
         doi: String? = nil,
         kind: ReferenceKind = .article,
         channel: ReferenceChannel = .peer_reviewed,
+        abstract: ReferenceTextBlock? = nil,
+        notes: [ReferenceTextBlock] = [],
+        reviews: [ReferenceReview] = [],
+        relations: [ReferenceRelation] = [],
         tags: ReferenceTagSet
     ) -> ReferenceData {
         ReferenceData(
@@ -106,6 +110,10 @@ extension CynologySources {
             doi: doi,
             kind: kind,
             channel: channel,
+            abstract: abstract,
+            notes: notes,
+            reviews: reviews,
+            relations: relations,
             tags: tags
         )
     }
