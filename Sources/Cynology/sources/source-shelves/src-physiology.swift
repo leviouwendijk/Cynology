@@ -36,6 +36,7 @@ public extension CynologySources {
 
         // old: CynologyClinicalSource.riemer_effectiveness_treatments_firework_fears_dogs
         case firework_fear_treatments
+        case firework_aversion_dutch_owners
 
         // old: CynologyClinicalSource.storengen_lingaas_noise_sensitivity_17_dog_breeds
         case noise_sensitivity_17_breeds
@@ -80,6 +81,7 @@ public extension CynologySources {
         case puppy_problem_clusters_emotional_commonalities
         case acute_emotional_state_indicators
         case emotional_arousal_physical_health
+        case saliva_sampling_stress_procedures
 
         // MARK: - AggressionRisk
 
@@ -97,7 +99,7 @@ public extension CynologySources {
 
         // old: CynologyClinicalSource.hsu_sun_factors_aggressive_responses_pet_dogs
         case aggressive_responses_pet_dogs
-
+        case dog_bites_public_health
         case human_directed_aggression_professional_opinion
         case aggressive_reactivity_self_control
 
@@ -137,6 +139,7 @@ public extension CynologySources {
 
         // old: CynologyClinicalSource.clay_paterson_bennett_perry_phillips_shelter_assessments_post_adoption
         case shelter_assessments_post_adoption
+        case owner_animal_factors_problem_behaviors
 
         // MARK: - CanineDiet
 
@@ -284,6 +287,7 @@ public extension CynologySources {
 
         // old: CynologyWelfareSource.cooper_cracknell_hardiman_wright_mills_remote_electronic_collars_reward_training
         case remote_electronic_collars_reward_training
+        case remote_static_pulse_systems_welfare_report
 
         // old: CynologyWelfareSource.dale_podlesnik_elliffe_aversion_program_reduce_native_bird_predation
         case native_bird_predation_aversion
@@ -749,6 +753,24 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .firework_aversion_dutch_owners:
+                return CynologySources.entry(
+                    title: "Firework Aversion in Cats and Dogs as Reported by Dutch Animal Owners",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.vas.2024.100402"
+                    ),
+                    authors: CynologySources.authors(
+                        "Ineke R. van Herwijnen, Claudia M. Vinke, Saskia S. Arndt, Pascalle E. M. Roulaux"
+                    ),
+                    date: CynologySources.published(
+                        "2024-12"
+                    ),
+                    doi: "10.1016/j.vas.2024.100402",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .noise_sensitivity_17_breeds:
                 return CynologySources.entry(
                     title: "Noise Sensitivity in 17 Dog Breeds: Prevalence, Breed Risk and Correlation with Fear in Other Situations",
@@ -1060,6 +1082,24 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .saliva_sampling_stress_procedures:
+                return CynologySources.entry(
+                    title: "Assessing Stress in Dogs During Saliva Sampling in Socio-Psychological Research: Preliminary Development of Animal-Friendly Practical Procedures",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106868"
+                    ),
+                    authors: CynologySources.authors(
+                        "Natalia Treder-Rochna, Elżbieta Chruściel, M. A. Gajewska"
+                    ),
+                    date: CynologySources.published(
+                        "2026"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106868",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .vicious_dogs:
                 return CynologySources.entry(
                     title: "Vicious Dogs: The Antisocial Behaviors and Psychological Characteristics of Owners",
@@ -1145,6 +1185,24 @@ public extension CynologySources {
                         "2010"
                     ),
                     doi: "10.1016/j.applanim.2010.01.013",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .dog_bites_public_health:
+                return CynologySources.entry(
+                    title: "Dog Bites",
+                    location: CynologySources.doi_location(
+                        "10.1136/bmj.39105.659919.BE"
+                    ),
+                    authors: CynologySources.authors(
+                        "Marina Morgan, John Palmer"
+                    ),
+                    date: CynologySources.published(
+                        "2007-02-24"
+                    ),
+                    doi: "10.1136/bmj.39105.659919.BE",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -1397,6 +1455,24 @@ public extension CynologySources {
                         "2020-07-18"
                     ),
                     doi: "10.3390/ani10071225",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .owner_animal_factors_problem_behaviors:
+                return CynologySources.entry(
+                    title: "Owner and Animal Factors Predict the Incidence of, and Owner Reaction Toward, Problematic Behaviors in Companion Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.jveb.2015.03.004"
+                    ),
+                    authors: CynologySources.authors(
+                        "Federica Pirrone, Ludovica Pierantoni, Silvia Michela Mazzola, Daniele Vigo, Mariangela Albertini"
+                    ),
+                    date: CynologySources.published(
+                        "2015"
+                    ),
+                    doi: "10.1016/j.jveb.2015.03.004",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -2212,6 +2288,23 @@ public extension CynologySources {
                     doi: "10.1371/journal.pone.0102722",
                     kind: .article,
                     channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .remote_static_pulse_systems_welfare_report:
+                return CynologySources.entry(
+                    title: "Studies to Assess the Effect of Pet Training Aids, Specifically Remote Static Pulse Systems, on the Welfare of Domestic Dogs",
+                    location: CynologySources.web_location(
+                        "https://repository.lincoln.ac.uk/articles/report/Studies_to_assess_the_effect_of_pet_training_aids_specifically_remote_static_pulse_systems_on_the_welfare_of_domestic_dogs/24337009"
+                    ),
+                    authors: CynologySources.authors(
+                        "Jonathan J. Cooper, Hannah F. Wright, Daniel S. Mills, Rachel A. Casey, Emily J. Blackwell, Katja van Driel, Jeff Lines"
+                    ),
+                    date: CynologySources.published(
+                        "2013"
+                    ),
+                    kind: .report,
+                    channel: .institutional,
                     tags: facets
                 )
 
@@ -3915,6 +4008,7 @@ public extension CynologySources {
                 )
 
             case .firework_fear_treatments,
+                 .firework_aversion_dutch_owners,
                  .noise_sensitivity_17_breeds,
                  .fear_responses_noises:
                 return .cynology(
@@ -3979,11 +4073,21 @@ public extension CynologySources {
                     .pain_medical
                 )
 
+            case .saliva_sampling_stress_procedures:
+                return .cynology(
+                    .methodology,
+                    .assessment,
+                    .stress,
+                    .physiology,
+                    .welfare
+                )
+
             case .vicious_dogs,
                  .high_risk_dogs_deviant_behaviors,
                  .intraspecific_killing,
                  .aggressive_cocker_spaniels,
-                 .aggressive_responses_pet_dogs:
+                 .aggressive_responses_pet_dogs,
+                 .dog_bites_public_health:
                 return .cynology(
                     .clinical_behavior,
                     .aggression,
@@ -4035,7 +4139,8 @@ public extension CynologySources {
                  .owner_attachment_problem_behaviors,
                  .shelter_testing_predict_problem_behaviour,
                  .returning_a_shelter_dog,
-                 .shelter_assessments_post_adoption:
+                 .shelter_assessments_post_adoption,
+                 .owner_animal_factors_problem_behaviors:
                 return .cynology(
                     .problem_behavior,
                     .clinical_behavior,
@@ -4147,6 +4252,7 @@ public extension CynologySources {
                  .electronic_collars_prevalence_success,
                  .kiwi_aversion_acquisition_maintenance,
                  .remote_electronic_collars_reward_training,
+                 .remote_static_pulse_systems_welfare_report,
                  .native_bird_predation_aversion,
                  .electronic_training_devices,
                  .remote_collars_positive_reinforcement,

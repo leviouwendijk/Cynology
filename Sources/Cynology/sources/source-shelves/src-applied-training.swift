@@ -60,6 +60,8 @@ public extension CynologySources {
         // old: CynologyTrainingSource.palmer_albohn_matsick_wynne_gender_norms_dominance_theory_aversive_training_methods
         case gender_norms_dominance_aversive_methods
 
+        case leash_equipment_pulling_welfare
+
         // MARK: - OperantChoiceAndScentwork
 
         case default_variant_behaviour_operant_training
@@ -127,6 +129,8 @@ public extension CynologySources {
         case dias_development_validation
         case behavioural_physiological_correlates_impulsivity
         case impulsivity_behaviour_problems_rst
+
+        case spatial_discounting_impulsivity
 
         // MARK: - WorkingDogs
 
@@ -460,6 +464,24 @@ public extension CynologySources {
                         "2026-05"
                     ),
                     doi: "10.1080/08927936.2026.2667006",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .leash_equipment_pulling_welfare:
+                return CynologySources.entry(
+                    title: "Comparing Efficacy in Reducing Pulling and Welfare Impacts of Four Types of Leash Walking Equipment",
+                    location: CynologySources.doi_location(
+                        "10.7717/peerj.18131"
+                    ),
+                    authors: CynologySources.authors(
+                        "Anamarie C. Johnson, Clive D. L. Wynne"
+                    ),
+                    date: CynologySources.published(
+                        "2024-10-24"
+                    ),
+                    doi: "10.7717/peerj.18131",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -837,6 +859,24 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .spatial_discounting_impulsivity:
+                return CynologySources.entry(
+                    title: "A Spatial Discounting Test to Assess Impulsivity in Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2018.01.003"
+                    ),
+                    authors: CynologySources.authors(
+                        "Karen Brady, Lynn Hewison, Hannah Wright, Helen Zulch, Nina Cracknell, Daniel Mills"
+                    ),
+                    date: CynologySources.published(
+                        "2018-05-01"
+                    ),
+                    doi: "10.1016/j.applanim.2018.01.003",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .working_dog_training_twenty_first_century:
                 return CynologySources.entry(
                     title: "Working Dog Training for the Twenty-First Century",
@@ -1050,7 +1090,8 @@ public extension CynologySources {
                  .reward_based_training_pet_massage,
                  .training_frequency_session_time,
                  .professional_trainers_perspectives,
-                 .gender_norms_dominance_aversive_methods:
+                 .gender_norms_dominance_aversive_methods,
+                 .leash_equipment_pulling_welfare:
                 return .cynology(
                     .training_methods,
                     .aversives,
@@ -1107,6 +1148,7 @@ public extension CynologySources {
 
             case .dias_development_validation,
                  .behavioural_physiological_correlates_impulsivity,
+                 .spatial_discounting_impulsivity,
                  .impulsive_for_life:
                 return .cynology(
                     .methodology,

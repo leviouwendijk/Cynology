@@ -54,6 +54,10 @@ public extension CynologySources {
         // old: CynologyCommunicationSource.dankevych_erturk_dog_body_language_literature_review
         case dog_body_language
 
+        case appeasement_signals_dog_human_communication
+        case displacement_behaviours_appeasement_function
+        case visual_cues_effector_specific_action_prediction
+
         // old: CynologyCommunicationSource.correia_caeiro_guo_mills_visual_perception_emotion_cues_dogs_review
         case visual_perception_emotion_cues
 
@@ -137,6 +141,7 @@ public extension CynologySources {
 
         // old: CynologyCommunicationSource.batt_batt_baguley_mcgreevy_juvenile_training_socialization_guide_dog_success
         case juvenile_socialization_guide_dog_success
+        case nature_nurture_conditions_behavior
 
         // old: CynologyCommunicationSource.denenberg_landsberg_dog_appeasing_pheromones_puppies_training_socialization
         case dog_appeasing_pheromones_puppies
@@ -177,6 +182,7 @@ public extension CynologySources {
 
         // old: CynologyCommunicationSource.warda_interspecies_emotional_labour_guide_dog_work
         case interspecies_emotional_labour
+        case herding_dog_training_interactivity
 
         case trainability_proxy_attachment_construct_validity
 
@@ -515,6 +521,60 @@ public extension CynologySources {
                         "2025-07-03"
                     ),
                     doi: "10.1007/s10071-025-01978-7",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .appeasement_signals_dog_human_communication:
+                return CynologySources.entry(
+                    title: "Appeasement Signals Used by Dogs During Dog–Human Communication",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.jveb.2016.12.012"
+                    ),
+                    authors: CynologySources.authors(
+                        "Angelika Firnkes, Angela Bartels, Emilie Bidoli, Michael Erhard"
+                    ),
+                    date: CynologySources.published(
+                        "2017"
+                    ),
+                    doi: "10.1016/j.jveb.2016.12.012",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .displacement_behaviours_appeasement_function:
+                return CynologySources.entry(
+                    title: "Appeasement Function of Displacement Behaviours? Dogs’ Behavioural Displays Exhibited Towards Threatening and Neutral Humans",
+                    location: CynologySources.doi_location(
+                        "10.1007/s10071-023-01742-9"
+                    ),
+                    authors: CynologySources.authors(
+                        "Giulia Pedretti, Chiara Canori, Eleonora Biffi, Sarah Marshall-Pescini, Paola Valsecchi"
+                    ),
+                    date: CynologySources.published(
+                        "2023-01-20"
+                    ),
+                    doi: "10.1007/s10071-023-01742-9",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .visual_cues_effector_specific_action_prediction:
+                return CynologySources.entry(
+                    title: "Dogs Rely On Visual Cues Rather Than On Effector-Specific Movement Representations to Predict Human Action Targets",
+                    location: CynologySources.doi_location(
+                        "10.1162/opmi_a_00096"
+                    ),
+                    authors: CynologySources.authors(
+                        "Lucrezia Lonardo, Christoph J. Völter, Claus Lamm, Ludwig Huber"
+                    ),
+                    date: CynologySources.published(
+                        "2023-08-20"
+                    ),
+                    doi: "10.1162/opmi_a_00096",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -945,6 +1005,24 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .nature_nurture_conditions_behavior:
+                return CynologySources.entry(
+                    title: "Nature and Nurture—How Different Conditions Affect the Behavior of Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.jveb.2016.10.002"
+                    ),
+                    authors: CynologySources.authors(
+                        "Erik Wilsson"
+                    ),
+                    date: CynologySources.published(
+                        "2016"
+                    ),
+                    doi: "10.1016/j.jveb.2016.10.002",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .aggressive_avoidance_first_six_months:
                 return CynologySources.entry(
                     title: "Relationship between Aggressive and Avoidance Behaviour by Dogs and Their Experience in the First Six Months of Life",
@@ -1214,6 +1292,24 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .herding_dog_training_interactivity:
+                return CynologySources.entry(
+                    title: "Teaching the Dog and Learning from the Dog: Interactivity in Herding Dog Training and Use",
+                    location: CynologySources.doi_location(
+                        "10.2752/175303713X13534238631515"
+                    ),
+                    authors: CynologySources.authors(
+                        "Nathalie Savalois, Nicolas Lescureux, Florence Brunois"
+                    ),
+                    date: CynologySources.published(
+                        "2013-03"
+                    ),
+                    doi: "10.2752/175303713X13534238631515",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .trainability_proxy_attachment_construct_validity:
                 return CynologySources.entry(
                     title: "Is trainability a proxy for attachment? Revisiting construct validity in canine–human bond research",
@@ -1350,6 +1446,23 @@ public extension CynologySources {
                     .canine_behavior
                 )
 
+            case .appeasement_signals_dog_human_communication,
+                 .displacement_behaviours_appeasement_function:
+                return .cynology(
+                    .communication,
+                    .canine_body_language,
+                    .stress,
+                    .canine_behavior
+                )
+
+            case .visual_cues_effector_specific_action_prediction:
+                return .cynology(
+                    .communication,
+                    .human_dog_relationship,
+                    .methodology,
+                    .canine_behavior
+                )
+
             case .why_adult_dogs_play,
                  .dog_dog_dog_human_play,
                  .human_play_signals,
@@ -1377,6 +1490,7 @@ public extension CynologySources {
                  .optimising_puppy_socialisation,
                  .early_social_exposure_aggression,
                  .early_life_adversity_aggression_fear,
+                 .nature_nurture_conditions_behavior,
                  .aggressive_avoidance_first_six_months,
                  .juvenile_socialization_guide_dog_success,
                  .dog_appeasing_pheromones_puppies,
@@ -1426,6 +1540,14 @@ public extension CynologySources {
                     .human_dog_relationship,
                     .communication,
                     .training_methods
+                )
+
+            case .herding_dog_training_interactivity:
+                return .cynology(
+                    .working_dogs,
+                    .training_methods,
+                    .human_dog_relationship,
+                    .communication
                 )
 
             case .trainability_proxy_attachment_construct_validity:

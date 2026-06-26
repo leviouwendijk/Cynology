@@ -21,6 +21,7 @@ public extension CynologySources {
 
         // old: CynologyLearningSource.dickinson_dearing_appetitive_aversive_interactions_inhibitory_processes
         case appetitive_aversive_interactions
+        case signal_centered_action_patterns_dogs
 
         // old: CynologyLearningSource.rescorla_pavlovian_conditioning_not_what_you_think
         case pavlovian_conditioning_not_what_you_think
@@ -244,6 +245,24 @@ public extension CynologySources {
                         "1988-03"
                     ),
                     doi: "10.1037/0003-066X.43.3.151",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .signal_centered_action_patterns_dogs:
+                return CynologySources.entry(
+                    title: "Signal-Centered Action Patterns of Dogs in Appetitive Classical Conditioning",
+                    location: CynologySources.doi_location(
+                        "10.1016/0023-9690(78)90010-3"
+                    ),
+                    authors: CynologySources.authors(
+                        "Herbert M. Jenkins, F. J. Barrera, C. Ireland, B. Woodside"
+                    ),
+                    date: CynologySources.published(
+                        "1978"
+                    ),
+                    doi: "10.1016/0023-9690(78)90010-3",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -829,7 +848,8 @@ public extension CynologySources {
                  .predictability_surprise_attention_conditioning,
                  .theory_of_pavlovian_conditioning,
                  .appetitive_aversive_interactions,
-                 .pavlovian_conditioning_not_what_you_think:
+                 .pavlovian_conditioning_not_what_you_think,
+                 .signal_centered_action_patterns_dogs:
                 return .cynology(
                     .learning_theory,
                     .classical_conditioning
