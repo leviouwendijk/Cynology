@@ -2258,52 +2258,52 @@ public extension CynologySources {
                     doi: "10.3389/fvets.2020.00508",
                     kind: .article,
                     channel: .peer_reviewed,
-                    reviews: [
-                        ReferenceReview(
-                            id: "managed-field-context-review",
-                            date: CynologySources.published(
-                                "2026-06-26"
-                            ),
-                            title: "Managed field context, not neutral setting",
-                            summary: .summary(
-                                "Useful as a field comparison of training packages, but the setting should not be read as neutral or as a full off-lead test of predatory or aggressive problem behaviour."
-                            ),
-                            entries: [
-                                ReferenceReviewEntry(
-                                    id: "setting-not-neutral",
-                                    kind: .method,
-                                    title: "Context",
-                                    body: .note(
-                                        "The training context included relevant distractors such as livestock and other dogs. For referred dogs with chasing or recall problems, that setting is affectively meaningful rather than neutral."
-                                    )
-                                ),
-                                ReferenceReviewEntry(
-                                    id: "managed-not-naturalistic",
-                                    kind: .limitation,
-                                    title: "Managed exposure",
-                                    body: .note(
-                                        "Dogs were generally close to trainers and managed on long lines, so the study mainly tests cue-response performance under controlled field conditions rather than unrestrained behaviour under full trigger access."
-                                    )
-                                ),
-                                ReferenceReviewEntry(
-                                    id: "package-not-isolated-variable",
-                                    kind: .caution,
-                                    title: "Training package comparison",
-                                    body: .note(
-                                        "The comparison does not isolate electric stimulation as a single variable. It compares broader training packages with different cues, contingencies, trainer styles and handling patterns."
-                                    )
-                                ),
-                                ReferenceReviewEntry(
-                                    id: "usable-interpretation",
-                                    kind: .interpretation,
-                                    title: "Best use in docs",
-                                    body: .note(
-                                        "Use this study as evidence that reward-focused professional training performed at least as well, and in some immediate cue-response measures better, than the industry-nominated e-collar package in this managed field context."
-                                    )
-                                )
-                            ]
-                        )
-                    ],
+                    // reviews: [
+                    //     ReferenceReview(
+                    //         id: "managed-field-context-review",
+                    //         date: CynologySources.published(
+                    //             "2026-06-26"
+                    //         ),
+                    //         title: "Niet neutraal, maar ook geen vrije probleemgedragstest",
+                    //         summary: .summary(
+                    //             "De setting was niet neutraal: de honden werkten in veldcontexten met relevante prikkels zoals omheinde schapen, omheinde kippen en andere aangelijnde honden. Tegelijk was de situatie sterk gemanaged: honden waren meestal aan 10 meter lange lijnen, dicht bij de trainer en zelden op grotere afstand. De studie meet daardoor vooral cue-responsen onder gecontroleerde trainingscondities."
+                    //         ),
+                    //         entries: [
+                    //             ReferenceReviewEntry(
+                    //                 id: "relevant-distractors",
+                    //                 kind: .method,
+                    //                 title: "Relevante prikkels",
+                    //                 body: .note(
+                    //                     "De veldlocaties bevatten omheinde schapen, omheinde kippen en andere aangelijnde honden als potentiële distractoren. Voor honden die waren verwezen voor achtervolgen, livestock-worrying of slechte recall is dat geen neutrale omgeving."
+                    //                 )
+                    //             ),
+                    //             ReferenceReviewEntry(
+                    //                 id: "managed-proximity",
+                    //                 kind: .method,
+                    //                 title: "Lijn en afstand",
+                    //                 body: .note(
+                    //                     "De honden werden meestal aan 10 meter lange lijnen gewerkt. Zij bevonden zich ongeveer 70% van de tijd binnen 1 meter van de trainer en minder dan 5% van de tijd verder dan 5 meter van de trainer."
+                    //                 )
+                    //             ),
+                    //             ReferenceReviewEntry(
+                    //                 id: "measured-behaviour",
+                    //                 kind: .limitation,
+                    //                 title: "Gemeten gedrag",
+                    //                 body: .note(
+                    //                     "De video-analyse ging vooral over reacties op “Come” en “Sit”: reageren na één cue, reageren na meerdere cues, niet reageren en responssnelheid. Dat zijn gehoorzaamheidsmaten, geen directe meting van vrij jagen, najagen of agressie."
+                    //                 )
+                    //             ),
+                    //             ReferenceReviewEntry(
+                    //                 id: "scope-of-finding",
+                    //                 kind: .interpretation,
+                    //                 title: "Begrenzing",
+                    //                 body: .note(
+                    //                     "De studie ondersteunt vooral uitspraken over cue-responsen in een gemanagede trainingscontext met relevante afleiding. Zij zegt minder over suppressie op grotere afstand, zonder lijn, zonder trainer-nabijheid of wanneer het volledige probleemgedrag vrij kan ontstaan."
+                    //                 )
+                    //             )
+                    //         ]
+                    //     )
+                    // ],
                     tags: facets
                 )
 
