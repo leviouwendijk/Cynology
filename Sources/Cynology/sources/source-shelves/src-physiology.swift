@@ -852,6 +852,14 @@ public extension CynologySources {
                     ),
                     kind: .thesis,
                     channel: .scholarly,
+                    notes: [
+                        .note(
+                            "Master's thesis. Useful as a cautious source for the observation that systematic desensitization and counter-conditioning, applied independently, did not reduce or eliminate separation-related behaviours as a long-term solution in this sample. Limitations include reduced owner compliance during systematic desensitization and possible over- or under-reporting from fixed-camera placement."
+                        ),
+                        .note(
+                            "Best used to support a narrow claim about limits of SD/CC-alone protocols, not as peer-reviewed clinical evidence against SD/CC as a whole."
+                        )
+                    ],
                     tags: facets
                 )
 
