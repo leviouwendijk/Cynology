@@ -73,6 +73,14 @@ public extension CynologySources {
         // old: CynologyClinicalSource.borchelt_voith_diagnosis_treatment_separation_related_behavior_problems
         case diagnosis_treatment_separation_related_behavior
 
+        // MARK: - PsychobiologicalEmotion
+
+        case assessing_emotional_behavior_problems
+        case psychobiological_framework_discrete_emotions
+        case puppy_problem_clusters_emotional_commonalities
+        case acute_emotional_state_indicators
+        case emotional_arousal_physical_health
+
         // MARK: - AggressionRisk
 
         // old: CynologyClinicalSource.ragatz_fremouw_thomas_mccoy_vicious_dogs_owner_characteristics
@@ -949,6 +957,96 @@ public extension CynologySources {
                         "1982-11"
                     ),
                     doi: "10.1016/S0195-5616(82)50106-4",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .assessing_emotional_behavior_problems:
+                return CynologySources.entry(
+                    title: "Perspectives on Assessing the Emotional Behavior of Animals with Behavior Problems",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.cobeha.2017.04.002"
+                    ),
+                    authors: CynologySources.authors(
+                        "Daniel S. Mills"
+                    ),
+                    date: CynologySources.published(
+                        "2017-08"
+                    ),
+                    doi: "10.1016/j.cobeha.2017.04.002",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .psychobiological_framework_discrete_emotions:
+                return CynologySources.entry(
+                    title: "A Psychobiological Framework for Defining Discrete Emotions in Animals",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106595"
+                    ),
+                    authors: CynologySources.authors(
+                        "Daniel S. Mills"
+                    ),
+                    date: CynologySources.published(
+                        "2025-05"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106595",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .puppy_problem_clusters_emotional_commonalities:
+                return CynologySources.entry(
+                    title: "Clustering of Behavioural Problems in Dogs Aged 3–6 Months Reflect Underlying Emotional Commonalities",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106591"
+                    ),
+                    authors: CynologySources.authors(
+                        "Tom Rowland, Helen Zulch, Lorna Winter, Carolyn Menteith, Daniel S. Mills"
+                    ),
+                    date: CynologySources.published(
+                        "2025-04"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106591",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .acute_emotional_state_indicators:
+                return CynologySources.entry(
+                    title: "Evaluation of Indicators of Acute Emotional States in Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1038/s41598-024-56859-9"
+                    ),
+                    authors: CynologySources.authors(
+                        "Hannah E. Flint et al."
+                    ),
+                    date: CynologySources.published(
+                        "2024-03-17"
+                    ),
+                    doi: "10.1038/s41598-024-56859-9",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .emotional_arousal_physical_health:
+                return CynologySources.entry(
+                    title: "Emotional Arousal Impacts Physical Health in Dogs: A Review of Factors Influencing Arousal, with Exemplary Case and Framework",
+                    location: CynologySources.doi_location(
+                        "10.3390/ani13030465"
+                    ),
+                    authors: CynologySources.authors(
+                        "Carrie Tooley, Sarah E. Heath"
+                    ),
+                    date: CynologySources.published(
+                        "2023-01-28"
+                    ),
+                    doi: "10.3390/ani13030465",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -3785,6 +3883,46 @@ public extension CynologySources {
                     .clinical_behavior,
                     .separation_distress,
                     .anxiety
+                )
+
+            case .assessing_emotional_behavior_problems,
+                 .psychobiological_framework_discrete_emotions:
+                return .cynology(
+                    .clinical_behavior,
+                    .affective_state,
+                    .assessment,
+                    .methodology,
+                    .welfare
+                )
+
+            case .puppy_problem_clusters_emotional_commonalities:
+                return .cynology(
+                    .clinical_behavior,
+                    .problem_behavior,
+                    .affective_state,
+                    .assessment,
+                    .anxiety,
+                    .frustration_tolerance,
+                    .separation_distress
+                )
+
+            case .acute_emotional_state_indicators:
+                return .cynology(
+                    .affective_state,
+                    .assessment,
+                    .physiology,
+                    .welfare,
+                    .stress,
+                    .canine_behavior
+                )
+
+            case .emotional_arousal_physical_health:
+                return .cynology(
+                    .affective_state,
+                    .physiology,
+                    .welfare,
+                    .stress,
+                    .pain_medical
                 )
 
             case .vicious_dogs,
