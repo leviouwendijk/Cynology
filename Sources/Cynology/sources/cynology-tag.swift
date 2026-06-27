@@ -43,6 +43,8 @@ public enum CynologyTag: String, Sendable, Codable, Hashable, CaseIterable, Refe
     case aversives
     case electronic_training_devices
 
+    case technical
+
     case communication
     case canine_body_language
     case socialization

@@ -7,6 +7,7 @@ public enum CynologySources {
             + boxed(AppliedTraining.self)
             + boxed(Ethology.self)
             + boxed(Physiology.self)
+            + boxed(Technical.self)
     }
 
     public static var collection: ReferenceCollection {

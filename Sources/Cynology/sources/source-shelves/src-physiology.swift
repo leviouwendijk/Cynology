@@ -307,6 +307,14 @@ public extension CynologySources {
         // old: CynologyWelfareSource.johnson_wynne_efficacy_welfare_chasing_behavior_training_methods
         case chasing_behavior_training_methods
 
+        case coyote_predation_electronic_training_collar
+        case safety_training_avoidance_motivated_aggression
+        case salgirli_dissertation_stress_learning_training_methods
+        case collar_mounted_electronic_devices_behavior_modification
+        case clinical_signs_electric_training_collars
+        case bva_bsava_electronic_training_aids_consultation_response
+        case victoria_prevention_cruelty_animals_electronic_collars
+
         // MARK: - DemandCapabilityStress
 
         // old: CynologyWelfareSource.xie_johns_job_scope_stress_too_high
@@ -2232,8 +2240,39 @@ public extension CynologySources {
                     date: CynologySources.published(
                         "2012"
                     ),
+                    container: ReferenceContainer.journal(
+                        title: "Revue de Médecine Vétérinaire",
+                        volume: "163",
+                        issue: "11",
+                        pages: "530-535"
+                    ),
                     kind: .article,
                     channel: .scholarly,
+                    relations: [
+                        ReferenceRelation.sameWork(
+                            title: "Eerste Kamer PDF mirror",
+                            location: CynologySources.web_location(
+                                "https://www.eerstekamer.nl/overig/20190920/comparison_of_learning_effects_and/document"
+                            )
+                        ),
+                        ReferenceRelation.sameWork(
+                            title: "Leerburg PDF mirror",
+                            location: CynologySources.web_location(
+                                "https://leerburg.com/pdf/comparingecollarprongandquittingsignal.pdf"
+                            )
+                        ),
+                        ReferenceRelation.sameWork(
+                            title: "ResearchGate metadata and mirror",
+                            location: CynologySources.web_location(
+                                "https://www.researchgate.net/publication/298421203_Comparison_of_learning_effects_and_stress_between_3_different_training_methods_Electronic_training_collar_pinch_collar_and_quitting_signal_in_Belgian_Malinois_Police_Dogs"
+                            )
+                        ),
+                        ReferenceRelation(
+                            kind: .related,
+                            targetID: "cynology.physiology.salgirli_dissertation_stress_learning_training_methods",
+                            title: "Full doctoral dissertation behind the larger study"
+                        )
+                    ],
                     tags: facets
                 )
 
@@ -2459,6 +2498,215 @@ public extension CynologySources {
                     doi: "10.3390/ani14182632",
                     kind: .article,
                     channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .coyote_predation_electronic_training_collar:
+                return CynologySources.entry(
+                    title: "Coyote Predation on Domestic Sheep Deterred with Electronic Dog-Training Collar",
+                    location: CynologySources.web_location(
+                        "https://www.jstor.org/stable/3783933"
+                    ),
+                    authors: CynologySources.authors(
+                        "William F. Andelt, Robert L. Phillips, Kenneth S. Gruver, John W. Guthrie"
+                    ),
+                    date: CynologySources.published(
+                        "1999"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Wildlife Society Bulletin",
+                        volume: "27",
+                        issue: "1",
+                        pages: "12-18"
+                    ),
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    relations: [
+                        ReferenceRelation.sameWork(
+                            title: "ResearchGate full-text mirror",
+                            location: CynologySources.web_location(
+                                "https://www.researchgate.net/publication/258098937_Coyote_predation_on_domestic_sheep_deterred_with_electronic_dog-training_collar"
+                            )
+                        )
+                    ],
+                    tags: facets
+                )
+
+            case .safety_training_avoidance_motivated_aggression:
+                return CynologySources.entry(
+                    title: "Safety Training: The Elimination of Avoidance-Motivated Aggression in Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1037/0096-3445.112.2.176"
+                    ),
+                    authors: CynologySources.authors(
+                        "Daniel F. Tortora"
+                    ),
+                    date: CynologySources.published(
+                        "1983"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Journal of Experimental Psychology: General",
+                        volume: "112",
+                        issue: "2",
+                        pages: "176-214"
+                    ),
+                    doi: "10.1037/0096-3445.112.2.176",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    relations: [
+                        ReferenceRelation.sameWork(
+                            title: "PubMed record",
+                            location: CynologySources.web_location(
+                                "https://pubmed.ncbi.nlm.nih.gov/6875580/"
+                            )
+                        ),
+                        ReferenceRelation.sameWork(
+                            title: "Illinois State University PDF mirror",
+                            location: CynologySources.web_location(
+                                "https://cpb-us-w2.wpmucdn.com/about.illinoisstate.edu/dist/6/45/files/2019/10/tortora-1983-safety-signal-training-elimination-of-avoidance-motivated-aggression-in-dogs.pdf"
+                            )
+                        )
+                    ],
+                    tags: facets
+                )
+
+            case .salgirli_dissertation_stress_learning_training_methods:
+                return CynologySources.entry(
+                    title: "Comparison of Stress and Learning Effects of Three Different Training Methods: Electric Training Collar, Pinch Collar and Quitting Signal",
+                    location: CynologySources.web_location(
+                        "https://d-nb.info/992370272/34"
+                    ),
+                    authors: CynologySources.authors(
+                        "Yasemin Salgirli"
+                    ),
+                    date: CynologySources.published(
+                        "2008"
+                    ),
+                    container: ReferenceContainer(
+                        kind: .repository,
+                        title: "Deutsche Nationalbibliothek",
+                        publisher: "University of Veterinary Medicine Hannover"
+                    ),
+                    kind: .dissertation,
+                    channel: .scholarly,
+                    relations: [
+                        ReferenceRelation(
+                            kind: .related,
+                            targetID: "cynology.physiology.electronic_collar_pinch_quitting_signal",
+                            title: "Condensed 2012 journal-article version"
+                        )
+                    ],
+                    tags: facets
+                )
+
+            case .collar_mounted_electronic_devices_behavior_modification:
+                return CynologySources.entry(
+                    title: "Collar Mounted Electronic Devices for Behaviour Modification in Dogs",
+                    location: CynologySources.web_location(
+                        "http://aiam.org.au/resources/Documents/2000%20UAM/PUB_Pro00_TaniaColeman_RichardMurray.pdf"
+                    ),
+                    authors: CynologySources.authors(
+                        "Tania Coleman, Richard Murray"
+                    ),
+                    date: CynologySources.published(
+                        "2000"
+                    ),
+                    container: ReferenceContainer.proceedings(
+                        title: "Urban Animal Management Conference Proceedings",
+                        publisher: "Australian Institute of Animal Management"
+                    ),
+                    kind: .article,
+                    channel: .professional,
+                    tags: facets
+                )
+
+            case .clinical_signs_electric_training_collars:
+                return CynologySources.entry(
+                    title: "Clinical Signs Caused by the Use of Electric Training Collars on Dogs in Everyday Life Situations",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2006.11.002"
+                    ),
+                    authors: CynologySources.authors(
+                        "Esther Schalke, Julia Stichnoth, Sandra Ott, Rainer Jones-Baade"
+                    ),
+                    date: CynologySources.published(
+                        "2007"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "105",
+                        issue: "4",
+                        pages: "369-380"
+                    ),
+                    doi: "10.1016/j.applanim.2006.11.002",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    relations: [
+                        ReferenceRelation.sameWork(
+                            title: "ScienceDirect abstract",
+                            location: CynologySources.web_location(
+                                "https://www.sciencedirect.com/science/article/abs/pii/S0168159106003820"
+                            )
+                        )
+                    ],
+                    tags: facets
+                )
+
+            case .bva_bsava_electronic_training_aids_consultation_response:
+                return CynologySources.entry(
+                    title: "Potential Controls or Prohibition of Electronic Training Aids in Scotland: British Veterinary Association and British Small Animal Veterinary Association Consultation Response",
+                    location: CynologySources.web_location(
+                        "https://www.bsava.com/wp-content/uploads/2022/02/BVA-and-BSAVA-consultation-response-electronic-training-collars-in-Scotland-.pdf"
+                    ),
+                    authors: CynologySources.authors(
+                        "British Veterinary Association, British Small Animal Veterinary Association"
+                    ),
+                    date: CynologySources.published(
+                        "2016-01-29"
+                    ),
+                    container: ReferenceContainer.website(
+                        title: "British Small Animal Veterinary Association",
+                        publisher: "British Small Animal Veterinary Association"
+                    ),
+                    kind: .position_statement,
+                    channel: .professional,
+                    relations: [
+                        ReferenceRelation.sameWork(
+                            title: "Scottish Government consultation response page",
+                            location: CynologySources.web_location(
+                                "https://consult.gov.scot/animal-welfare/electronic-training-aids/consultation/view_respondent?show_all_questions=0&sort=submitted&order=ascending&_q__text=British+Veterinary+Association&uuId=622589211"
+                            )
+                        )
+                    ],
+                    tags: facets
+                )
+
+            case .victoria_prevention_cruelty_animals_electronic_collars:
+                return CynologySources.entry(
+                    title: "Prevention of Cruelty to Animals Regulations 2019",
+                    location: CynologySources.web_location(
+                        "https://www.legislation.vic.gov.au/as-made/statutory-rules/prevention-cruelty-animals-regulations-2019"
+                    ),
+                    authors: CynologySources.authors(
+                        "State Government of Victoria"
+                    ),
+                    date: CynologySources.published(
+                        "2019"
+                    ),
+                    container: ReferenceContainer.website(
+                        title: "Victorian Legislation",
+                        publisher: "State Government of Victoria"
+                    ),
+                    kind: .regulation,
+                    channel: .institutional,
+                    relations: [
+                        ReferenceRelation.sameWork(
+                            title: "Authorised regulations PDF",
+                            location: CynologySources.web_location(
+                                "https://content.legislation.vic.gov.au/sites/default/files/9cc60c2d-63c4-35b6-95ad-c39254a5d170_19-133sra%20authorised.pdf"
+                            )
+                        )
+                    ],
                     tags: facets
                 )
 
@@ -4258,7 +4506,14 @@ public extension CynologySources {
                  .remote_collars_positive_reinforcement,
                  .commentary_remote_collars,
                  .response_commentary_electronic_aids,
-                 .chasing_behavior_training_methods:
+                 .chasing_behavior_training_methods,
+                 .coyote_predation_electronic_training_collar,
+                 .safety_training_avoidance_motivated_aggression,
+                 .salgirli_dissertation_stress_learning_training_methods,
+                 .collar_mounted_electronic_devices_behavior_modification,
+                 .clinical_signs_electric_training_collars,
+                 .bva_bsava_electronic_training_aids_consultation_response,
+                 .victoria_prevention_cruelty_animals_electronic_collars:
                 return .cynology(
                     .electronic_training_devices,
                     .aversives,

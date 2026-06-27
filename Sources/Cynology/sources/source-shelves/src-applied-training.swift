@@ -62,6 +62,9 @@ public extension CynologySources {
 
         case leash_equipment_pulling_welfare
 
+        case predatory_behaviour_greyhounds_expert_opinion
+        case herding_behavior_reinforcement_punishment
+
         // MARK: - OperantChoiceAndScentwork
 
         case default_variant_behaviour_operant_training
@@ -482,6 +485,53 @@ public extension CynologySources {
                         "2024-10-24"
                     ),
                     doi: "10.7717/peerj.18131",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .predatory_behaviour_greyhounds_expert_opinion:
+                return CynologySources.entry(
+                    title: "Preventing predatory behaviour in greyhounds retired from the racing industry: Expert opinions collected using a survey and interviews",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2020.104988"
+                    ),
+                    authors: CynologySources.authors(
+                        "Tiffani J. Howell, Pauleen C. Bennett"
+                    ),
+                    date: CynologySources.published(
+                        "2020"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "226",
+                        pages: "104988"
+                    ),
+                    doi: "10.1016/j.applanim.2020.104988",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .herding_behavior_reinforcement_punishment:
+                return CynologySources.entry(
+                    title: "Modification of instinctive herding dog behavior using reinforcement and punishment",
+                    location: CynologySources.doi_location(
+                        "10.2752/089279302786992685"
+                    ),
+                    authors: CynologySources.authors(
+                        "Eve D. Marschark, Ronald Baenninger"
+                    ),
+                    date: CynologySources.published(
+                        "2002"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Anthrozoös",
+                        volume: "15",
+                        issue: "1",
+                        pages: "51-68"
+                    ),
+                    doi: "10.2752/089279302786992685",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -1096,6 +1146,22 @@ public extension CynologySources {
                     .training_methods,
                     .aversives,
                     .welfare
+                )
+
+            case .predatory_behaviour_greyhounds_expert_opinion:
+                return .cynology(
+                    .training_methods,
+                    .behavior_modification,
+                    .canine_behavior,
+                    .aversives
+                )
+
+            case .herding_behavior_reinforcement_punishment:
+                return .cynology(
+                    .operant_conditioning,
+                    .reinforcement,
+                    .punishment,
+                    .training_methods
                 )
 
             case .default_variant_behaviour_operant_training:
