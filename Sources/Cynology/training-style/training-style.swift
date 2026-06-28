@@ -135,7 +135,6 @@ public extension TrainingStyleProfile {
                 summary: "Training waarin beloning de basis blijft, maar druk, correctie of aversieve informatie beperkt en doelgericht beschikbaar kan zijn.",
                 tags: [
                     .balanced,
-                    .leadership,
                     .lima
                 ],
                 includes: [
