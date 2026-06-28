@@ -24,6 +24,7 @@ public extension CynologySources {
 
         // old: CynologyClinicalSource.salonen_mikkola_hakanen_sulkama_puurunen_lohi_personality_traits_behavioral_problems
         case personality_unwanted_behavior_survey
+        case personality_traits_behavioral_problems
 
         // old: CynologyClinicalSource.kolkmeyer_baum_warlich_zach_ganslosser_husky_bulldog_castration_breed_groups
         case castration_aggression_fear
@@ -100,6 +101,7 @@ public extension CynologySources {
         // old: CynologyClinicalSource.hsu_sun_factors_aggressive_responses_pet_dogs
         case aggressive_responses_pet_dogs
         case dog_bites_public_health
+        case demographic_environmental_aggression_purebred_dogs
         case human_directed_aggression_professional_opinion
         case aggressive_reactivity_self_control
 
@@ -189,6 +191,7 @@ public extension CynologySources {
 
         // old: CynologyWelfareSource.rooney_bradshaw_canine_welfare_science_antidote_sentiment_myth
         case canine_welfare_science
+        case companion_dog_welfare_living_conditions
 
         // old: CynologyWelfareSource.englund_cronin_choice_control_animal_welfare
         case choice_control_welfare
@@ -684,6 +687,29 @@ public extension CynologySources {
                         "2021-12-01"
                     ),
                     doi: "10.3390/ani11123423",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .personality_traits_behavioral_problems:
+                return CynologySources.entry(
+                    title: "Personality Traits Associate with Behavioral Problems in Pet Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1038/s41398-022-01841-0"
+                    ),
+                    authors: CynologySources.authors(
+                        "Milla Salonen, Salla Mikkola, Emma Hakanen, Sini Sulkama, Jenni Puurunen, Hannes Lohi"
+                    ),
+                    date: CynologySources.published(
+                        "2022-02-23"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Translational Psychiatry",
+                        volume: "12",
+                        pages: "78"
+                    ),
+                    doi: "10.1038/s41398-022-01841-0",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -1216,6 +1242,29 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .demographic_environmental_aggression_purebred_dogs:
+                return CynologySources.entry(
+                    title: "Aggressive Behaviour Is Affected by Demographic, Environmental and Behavioural Factors in Purebred Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1038/s41598-021-88793-5"
+                    ),
+                    authors: CynologySources.authors(
+                        "Salla Mikkola, Milla Salonen, Jenni Puurunen, Emma Hakanen, Sini Sulkama, César Araujo, Hannes Lohi"
+                    ),
+                    date: CynologySources.published(
+                        "2021-05-03"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Scientific Reports",
+                        volume: "11",
+                        pages: "9433"
+                    ),
+                    doi: "10.1038/s41598-021-88793-5",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .human_directed_aggression_professional_opinion:
                 return CynologySources.entry(
                     title: "Factors influencing the expression of human directed dog aggression. A qualitative study of professional opinion",
@@ -1735,6 +1784,29 @@ public extension CynologySources {
                     doi: "10.1007/978-3-642-53994-7_11",
                     kind: .book_chapter,
                     channel: .scholarly,
+                    tags: facets
+                )
+
+            case .companion_dog_welfare_living_conditions:
+                return CynologySources.entry(
+                    title: "Pampered Pets or Poor Bastards? The Welfare of Dogs Kept as Companion Animals",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2022.105640"
+                    ),
+                    authors: CynologySources.authors(
+                        "Iben Meyer, Björn Forkman, Merete Fredholm, Carmen Glanville, Bernt Guldbrandtsen, Eliza M. Ruiz Izaguirre, Clare Palmer, Peter Sandøe"
+                    ),
+                    date: CynologySources.published(
+                        "2022-04-25"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "251",
+                        pages: "105640"
+                    ),
+                    doi: "10.1016/j.applanim.2022.105640",
+                    kind: .article,
+                    channel: .peer_reviewed,
                     tags: facets
                 )
 
@@ -4239,6 +4311,15 @@ public extension CynologySources {
                     .temperament
                 )
 
+            case .personality_traits_behavioral_problems:
+                return .cynology(
+                    .clinical_behavior,
+                    .problem_behavior,
+                    .temperament,
+                    .assessment,
+                    .affective_state
+                )
+
             case .castration_aggression_fear:
                 return .cynology(
                     .clinical_behavior,
@@ -4342,6 +4423,14 @@ public extension CynologySources {
                     .problem_behavior
                 )
 
+            case .demographic_environmental_aggression_purebred_dogs:
+                return .cynology(
+                    .clinical_behavior,
+                    .aggression,
+                    .problem_behavior,
+                    .assessment
+                )
+
             case .human_directed_aggression_professional_opinion:
                 return .cynology(
                     .clinical_behavior,
@@ -4440,6 +4529,13 @@ public extension CynologySources {
                 return .cynology(
                     .welfare,
                     .physiology
+                )
+
+            case .companion_dog_welfare_living_conditions:
+                return .cynology(
+                    .welfare,
+                    .canine_behavior,
+                    .human_dog_relationship
                 )
 
             case .training_as_enrichment,

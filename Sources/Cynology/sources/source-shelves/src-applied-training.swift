@@ -69,6 +69,7 @@ public extension CynologySources {
 
         case default_variant_behaviour_operant_training
         case scentwork_traditional_training_welfare_bond
+        case partial_rewarding_clicker_training_affective_state
 
         // MARK: - BehaviorModification
 
@@ -568,6 +569,29 @@ public extension CynologySources {
                         "2026-04"
                     ),
                     doi: "10.1016/j.applanim.2026.106924",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .partial_rewarding_clicker_training_affective_state:
+                return CynologySources.entry(
+                    title: "Partial Rewarding during Clicker Training Does Not Improve Naive Dogs' Learning Speed and Induces a Pessimistic-like Affective State",
+                    location: CynologySources.doi_location(
+                        "10.1007/s10071-020-01425-9"
+                    ),
+                    authors: CynologySources.authors(
+                        "Giulia Cimarelli, Julia Schoesswender, Roberta Vitiello, Ludwig Huber, Zsófia Virányi"
+                    ),
+                    date: CynologySources.published(
+                        "2020-09-08"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Animal Cognition",
+                        volume: "24",
+                        pages: "107-119"
+                    ),
+                    doi: "10.1007/s10071-020-01425-9",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -1178,6 +1202,15 @@ public extension CynologySources {
                     .welfare,
                     .human_dog_relationship,
                     .engagement
+                )
+
+            case .partial_rewarding_clicker_training_affective_state:
+                return .cynology(
+                    .operant_conditioning,
+                    .reinforcement,
+                    .training_methods,
+                    .affective_state,
+                    .welfare
                 )
 
             case .counterconditioning_interventions_review,

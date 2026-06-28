@@ -132,6 +132,7 @@ public extension CynologySources {
 
         // old: CynologyCommunicationSource.wormald_lawrence_carter_fisher_early_social_exposure_reported_aggression
         case early_social_exposure_aggression
+        case adult_intraspecific_social_exposure_military_dogs
 
         // old: CynologyCommunicationSource.espinosa_zapata_alvarez_serpell_kukekova_hecht_early_life_adversity_breed_aggression_fear
         case early_life_adversity_aggression_fear
@@ -987,6 +988,29 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .adult_intraspecific_social_exposure_military_dogs:
+                return CynologySources.entry(
+                    title: "Benefits of Intraspecific Social Exposure in Adult Swiss Military Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2017.12.016"
+                    ),
+                    authors: CynologySources.authors(
+                        "Nastassja Gfrerer, Michael Taborsky, Hanno Würbel"
+                    ),
+                    date: CynologySources.published(
+                        "2018-04"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "201",
+                        pages: "54-60"
+                    ),
+                    doi: "10.1016/j.applanim.2017.12.016",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .early_life_adversity_aggression_fear:
                 return CynologySources.entry(
                     title: "Influence of Early Life Adversity and Breed on Aggression and Fear in Dogs",
@@ -1501,6 +1525,14 @@ public extension CynologySources {
                     .socialization,
                     .canine_behavior,
                     .welfare
+                )
+
+            case .adult_intraspecific_social_exposure_military_dogs:
+                return .cynology(
+                    .socialization,
+                    .canine_behavior,
+                    .welfare,
+                    .enrichment
                 )
 
             case .inadequate_socialisation_fearfulness:
