@@ -8,8 +8,15 @@ public enum CynologyTag: String, Sendable, Codable, Hashable, CaseIterable, Refe
     case operant_conditioning
     case reinforcement
     case punishment
+    case extinction
     case matching_law
     case action_habit_control
+    case behavioral_persistence
+    case response_blocking
+    case response_interruption
+    case response_disruption
+    case automatic_reinforcement
+    case stereotypy
     case context_renewal
     case engagement
 

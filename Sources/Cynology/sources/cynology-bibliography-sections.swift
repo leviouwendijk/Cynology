@@ -20,15 +20,22 @@ public enum CynologyBibliographySections {
             id: "learning_and_conditioning",
             title: "Leren en conditionering",
             eyebrow: "Leerprincipes",
-            caption: "Bronnen over klassieke conditionering, operante conditionering, bekrachtiging, straf, keuzeprocessen, gewoontevorming en leerbaarheid.",
+            caption: "Bronnen over klassieke conditionering, operante conditionering, bekrachtiging, straf, extinctie, responsblokkering, responsinterruptie, gedragsverstoring, automatische bekrachtiging, stereotiep gedrag, keuzeprocessen, gewoontevorming en leerbaarheid.",
             include: .cynology(
                 .learning_theory,
                 .classical_conditioning,
                 .operant_conditioning,
                 .reinforcement,
                 .punishment,
+                .extinction,
                 .matching_law,
-                .action_habit_control
+                .action_habit_control,
+                .behavioral_persistence,
+                .response_blocking,
+                .response_interruption,
+                .response_disruption,
+                .automatic_reinforcement,
+                .stereotypy
             ),
             match: .any,
             sort: .title_ascending
@@ -38,11 +45,13 @@ public enum CynologyBibliographySections {
             id: "training_methods",
             title: "Trainingsmethoden",
             eyebrow: "Training",
-            caption: "Bronnen over praktische trainingsmethoden, beloningsgerichte training, aversieve hulpmiddelen, gedragsmodificatie en trainingseffecten.",
+            caption: "Bronnen over praktische trainingsmethoden, beloningsgerichte training, responsblokkering, responsinterruptie, aversieve hulpmiddelen, gedragsmodificatie en trainingseffecten.",
             include: .cynology(
                 .training_methods,
                 .behavior_modification,
                 .reinforcement,
+                .response_blocking,
+                .response_interruption,
                 .aversives,
                 .electronic_training_devices
             ),

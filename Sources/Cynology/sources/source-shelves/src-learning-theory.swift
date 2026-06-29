@@ -127,6 +127,31 @@ public extension CynologySources {
         // old: CynologyLearningSource.vogel_sprott_partial_reward_resistance_punishment_subsequent_extinction
         case partial_reward_resistance_to_punishment
 
+        // MARK: - ResponseBlockingAndDisruption
+
+        case varied_effects_of_punishment
+        case two_definitions_of_punishment
+        case quantitative_properties_of_anxiety
+        case conditioned_fear_freezing_suppression
+
+        case extinction_procedural_form_function
+        case sensory_extinction_reinforcement
+        case response_blocking_extinction_punishment
+        case response_blocking_extinction_punishment_replication
+        case protective_equipment_sensory_extinction_punishment
+        case response_blocking_redirection_pica
+        case collateral_effects_response_blocking
+        case response_blocking_parameters_pica
+
+        case vocal_stereotypy_autism
+        case response_interruption_redirection_stereotypy
+        case immediate_subsequent_effects_rird_vocal_stereotypy
+        case response_interruption_automatic_reinforcement_conditions
+        case blocking_mouthing_reinforcer_effectiveness
+        case ncr_response_blocking_automatic_reinforcement
+        case response_interruption_redirection_scoping_review
+        case brief_response_blocking_assessment
+
         // MARK: - ContextRenewal
 
         // old: CynologyLearningSource.campese_brannigan_ledoux_conditional_control_instrumental_avoidance_context_extinction
@@ -765,6 +790,326 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .varied_effects_of_punishment:
+                return CynologySources.entry(
+                    title: "The Varied Effects of Punishment on Behavior",
+                    location: CynologySources.doi_location(
+                        "10.1037/h0046499"
+                    ),
+                    authors: CynologySources.authors(
+                        "Russell M. Church"
+                    ),
+                    date: CynologySources.published("1963-09"),
+                    doi: "10.1037/h0046499",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .two_definitions_of_punishment:
+                return CynologySources.entry(
+                    title: "Two Definitions of Punishment",
+                    location: CynologySources.doi_location(
+                        "10.1037/h0100049"
+                    ),
+                    authors: CynologySources.authors(
+                        "Per Holth"
+                    ),
+                    date: CynologySources.published("2005"),
+                    doi: "10.1037/h0100049",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .quantitative_properties_of_anxiety:
+                return CynologySources.entry(
+                    title: "Some Quantitative Properties of Anxiety",
+                    location: CynologySources.doi_location(
+                        "10.1037/h0062283"
+                    ),
+                    authors: CynologySources.authors(
+                        "William K. Estes, Burrhus F. Skinner"
+                    ),
+                    date: CynologySources.published("1941-11"),
+                    doi: "10.1037/h0062283",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .conditioned_fear_freezing_suppression:
+                return CynologySources.entry(
+                    title: "Conditioned Fear Assessed by Freezing and by the Suppression of Three Different Baselines",
+                    location: CynologySources.doi_location(
+                        "10.3758/BF03199629"
+                    ),
+                    authors: CynologySources.authors(
+                        "Mark E. Bouton, Robert C. Bolles"
+                    ),
+                    date: CynologySources.published("1980-09"),
+                    doi: "10.3758/BF03199629",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .extinction_procedural_form_function:
+                return CynologySources.entry(
+                    title: "What Makes Extinction Work: An Analysis of Procedural Form and Function",
+                    location: CynologySources.doi_location(
+                        "10.1901/jaba.1994.27-131"
+                    ),
+                    authors: CynologySources.authors(
+                        "Brian A. Iwata, Gary M. Pace, G. E. Cowdery, Raymond G. Miltenberger"
+                    ),
+                    date: CynologySources.published("1994"),
+                    doi: "10.1901/jaba.1994.27-131",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .sensory_extinction_reinforcement:
+                return CynologySources.entry(
+                    title: "Sensory Extinction and Sensory Reinforcement Principles for Programming Multiple Adaptive Behavior Change",
+                    location: CynologySources.doi_location(
+                        "10.1901/jaba.1979.12-221"
+                    ),
+                    authors: CynologySources.authors(
+                        "Arnold Rincover, Richard Cook, Arthur Peoples, David Packard"
+                    ),
+                    date: CynologySources.published("1979"),
+                    doi: "10.1901/jaba.1979.12-221",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .response_blocking_extinction_punishment:
+                return CynologySources.entry(
+                    title: "A Methodology for Distinguishing Between Extinction and Punishment Effects Associated with Response Blocking",
+                    location: CynologySources.doi_location(
+                        "10.1901/jaba.1996.29-231"
+                    ),
+                    authors: CynologySources.authors(
+                        "Dorothea C. Lerman, Brian A. Iwata"
+                    ),
+                    date: CynologySources.published("1996"),
+                    doi: "10.1901/jaba.1996.29-231",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .response_blocking_extinction_punishment_replication:
+                return CynologySources.entry(
+                    title: "Distinguishing Between Extinction and Punishment Effects of Response Blocking: A Replication",
+                    location: CynologySources.doi_location(
+                        "10.1901/jaba.1999.32-367"
+                    ),
+                    authors: CynologySources.authors(
+                        "Richard G. Smith, Lori Russo, Duy D. Le"
+                    ),
+                    date: CynologySources.published("1999"),
+                    doi: "10.1901/jaba.1999.32-367",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .protective_equipment_sensory_extinction_punishment:
+                return CynologySources.entry(
+                    title: "Protective Equipment as Treatment for Stereotypic Hand Mouthing: Sensory Extinction or Punishment Effects?",
+                    location: CynologySources.doi_location(
+                        "10.1901/jaba.1994.27-345"
+                    ),
+                    authors: CynologySources.authors(
+                        "Jodi L. Mazaleski, Brian A. Iwata, Terry A. Rodgers, Timothy R. Vollmer, Joseph R. Zarcone"
+                    ),
+                    date: CynologySources.published("1994"),
+                    doi: "10.1901/jaba.1994.27-345",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .response_blocking_redirection_pica:
+                return CynologySources.entry(
+                    title: "Response Blocking with and Without Redirection for the Treatment of Pica",
+                    location: CynologySources.doi_location(
+                        "10.1901/jaba.2001.34-527"
+                    ),
+                    authors: CynologySources.authors(
+                        "Louis P. Hagopian, John D. Adelinis"
+                    ),
+                    date: CynologySources.published("2001"),
+                    doi: "10.1901/jaba.2001.34-527",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .collateral_effects_response_blocking:
+                return CynologySources.entry(
+                    title: "Collateral Effects of Response Blocking During the Treatment of Stereotypic Behavior",
+                    location: CynologySources.doi_location(
+                        "10.1901/jaba.2003.36-119"
+                    ),
+                    authors: CynologySources.authors(
+                        "Dorothea C. Lerman, Michael E. Kelley, Christina M. Vorndran, Carole M. Van Camp"
+                    ),
+                    date: CynologySources.published("2003"),
+                    doi: "10.1901/jaba.2003.36-119",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .response_blocking_parameters_pica:
+                return CynologySources.entry(
+                    title: "An Analysis of Response-Blocking Parameters in the Prevention of Pica",
+                    location: CynologySources.doi_location(
+                        "10.1901/jaba.2005.92-04"
+                    ),
+                    authors: CynologySources.authors(
+                        "Brandy E. McCord, Jennifer W. Grosser, Brian A. Iwata, Lori A. Powers"
+                    ),
+                    date: CynologySources.published("2005"),
+                    doi: "10.1901/jaba.2005.92-04",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .vocal_stereotypy_autism:
+                return CynologySources.entry(
+                    title: "Assessing and Treating Vocal Stereotypy in Children with Autism",
+                    location: CynologySources.doi_location(
+                        "10.1901/jaba.2007.30-06"
+                    ),
+                    authors: CynologySources.authors(
+                        "William H. Ahearn, Kathy M. Clark, Rebecca P. F. MacDonald, Bo In Chung"
+                    ),
+                    date: CynologySources.published("2007"),
+                    doi: "10.1901/jaba.2007.30-06",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .response_interruption_redirection_stereotypy:
+                return CynologySources.entry(
+                    title: "Further Evaluation of Response Interruption and Redirection as Treatment for Stereotypy",
+                    location: CynologySources.doi_location(
+                        "10.1901/jaba.2011.44-95"
+                    ),
+                    authors: CynologySources.authors(
+                        "Erin N. Ahrens, Dorothea C. Lerman, Tiffany Kodak, April S. Worsdell, Catherine Keegan"
+                    ),
+                    date: CynologySources.published("2011"),
+                    doi: "10.1901/jaba.2011.44-95",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .immediate_subsequent_effects_rird_vocal_stereotypy:
+                return CynologySources.entry(
+                    title: "Evaluation of the Immediate and Subsequent Effects of Response Interruption and Redirection on Vocal Stereotypy",
+                    location: CynologySources.doi_location(
+                        "10.1901/jaba.2011.44-681"
+                    ),
+                    authors: CynologySources.authors(
+                        "Bridget I. Schumacher, John T. Rapp"
+                    ),
+                    date: CynologySources.published("2011"),
+                    doi: "10.1901/jaba.2011.44-681",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .response_interruption_automatic_reinforcement_conditions:
+                return CynologySources.entry(
+                    title: "An Approach to Identifying the Conditions Under Which Response Interruption Will Reduce Automatically Reinforced Problem Behavior",
+                    location: CynologySources.doi_location(
+                        "10.1007/BF03391771"
+                    ),
+                    authors: CynologySources.authors(
+                        "Megan L. Kliebert, Jeffrey H. Tiger, Karen A. Toussaint"
+                    ),
+                    date: CynologySources.published("2011-06"),
+                    doi: "10.1007/BF03391771",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .blocking_mouthing_reinforcer_effectiveness:
+                return CynologySources.entry(
+                    title: "The Effects of Blocking Mouthing of Leisure Items on Their Effectiveness as Reinforcers",
+                    location: CynologySources.doi_location(
+                        "10.1901/jaba.2007.761-765"
+                    ),
+                    authors: CynologySources.authors(
+                        "Rachel S. F. Tarbox, Jonathan Tarbox, Patrick M. Ghezzi, Michele D. Wallace, J. Helen Yoo"
+                    ),
+                    date: CynologySources.published("2007"),
+                    doi: "10.1901/jaba.2007.761-765",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .ncr_response_blocking_automatic_reinforcement:
+                return CynologySources.entry(
+                    title: "Individual and Combined Effects of Noncontingent Reinforcement and Response Blocking on Automatically Reinforced Problem Behavior",
+                    location: CynologySources.doi_location(
+                        "10.1002/jaba.306"
+                    ),
+                    authors: CynologySources.authors(
+                        "Valdeep Saini, Brian D. Greer, Wayne W. Fisher, Kathryn R. Lichtblau, Amanda A. DeSouza, Diana R. Mitteer"
+                    ),
+                    date: CynologySources.published("2016"),
+                    doi: "10.1002/jaba.306",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .response_interruption_redirection_scoping_review:
+                return CynologySources.entry(
+                    title: "Response Interruption and Redirection: A Scoping Review of Its Procedural Permutations and Participant Pools",
+                    location: CynologySources.doi_location(
+                        "10.1037/bar0000282"
+                    ),
+                    authors: CynologySources.authors(
+                        "Samantha L. Breeman, Jason C. Vladescu, Tina M. Sidener, Ruth DeBar"
+                    ),
+                    date: CynologySources.published("2024"),
+                    doi: "10.1037/bar0000282",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .brief_response_blocking_assessment:
+                return CynologySources.entry(
+                    title: "Preliminary Outcomes From a Brief Response Blocking Assessment",
+                    location: CynologySources.doi_location(
+                        "10.1002/bin.70020"
+                    ),
+                    authors: CynologySources.authors(
+                        "Cara L. Phillips, Meghan A. Deshais, Timothy R. Vollmer, Jennifer R. Zarcone"
+                    ),
+                    date: CynologySources.published("2025-06-20"),
+                    doi: "10.1002/bin.70020",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .conditional_control_of_avoidance:
                 return CynologySources.entry(
                     title: "Conditional Control of Instrumental Avoidance by Context Following Extinction",
@@ -904,6 +1249,78 @@ public extension CynologySources {
                 return .cynology(
                     .learning_theory,
                     .punishment
+                )
+
+            case .varied_effects_of_punishment,
+                 .two_definitions_of_punishment:
+                return .cynology(
+                    .learning_theory,
+                    .punishment,
+                    .methodology
+                )
+
+            case .quantitative_properties_of_anxiety,
+                 .conditioned_fear_freezing_suppression:
+                return .cynology(
+                    .learning_theory,
+                    .classical_conditioning,
+                    .affective_state,
+                    .response_disruption
+                )
+
+            case .extinction_procedural_form_function,
+                 .sensory_extinction_reinforcement,
+                 .protective_equipment_sensory_extinction_punishment:
+                return .cynology(
+                    .learning_theory,
+                    .extinction,
+                    .automatic_reinforcement,
+                    .methodology
+                )
+
+            case .response_blocking_extinction_punishment,
+                 .response_blocking_extinction_punishment_replication:
+                return .cynology(
+                    .learning_theory,
+                    .response_blocking,
+                    .extinction,
+                    .punishment,
+                    .methodology
+                )
+
+            case .response_blocking_redirection_pica,
+                 .collateral_effects_response_blocking,
+                 .response_blocking_parameters_pica:
+                return .cynology(
+                    .learning_theory,
+                    .response_blocking,
+                    .response_disruption,
+                    .automatic_reinforcement,
+                    .problem_behavior
+                )
+
+            case .vocal_stereotypy_autism,
+                 .response_interruption_redirection_stereotypy,
+                 .immediate_subsequent_effects_rird_vocal_stereotypy,
+                 .response_interruption_automatic_reinforcement_conditions,
+                 .response_interruption_redirection_scoping_review:
+                return .cynology(
+                    .learning_theory,
+                    .response_interruption,
+                    .response_disruption,
+                    .automatic_reinforcement,
+                    .stereotypy
+                )
+
+            case .blocking_mouthing_reinforcer_effectiveness,
+                 .ncr_response_blocking_automatic_reinforcement,
+                 .brief_response_blocking_assessment:
+                return .cynology(
+                    .learning_theory,
+                    .response_blocking,
+                    .response_disruption,
+                    .automatic_reinforcement,
+                    .behavioral_persistence
                 )
 
             case .conditional_control_of_avoidance,
