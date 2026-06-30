@@ -53,6 +53,7 @@ public extension CynologySources {
 
         // old: CynologyCommunicationSource.dankevych_erturk_dog_body_language_literature_review
         case dog_body_language
+        case canine_body_language_photographic_guide
 
         case appeasement_signals_dog_human_communication
         case displacement_behaviours_appeasement_function
@@ -470,6 +471,28 @@ public extension CynologySources {
                     doi: "10.36016/JVMBBS-2026-12-2-2",
                     kind: .article,
                     channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .canine_body_language_photographic_guide:
+                return CynologySources.entry(
+                    title: "Canine Body Language: A Photographic Guide: Interpreting the Native Language of the Domestic Dog",
+                    location: CynologySources.web_location(
+                        "https://www.dogwise.com/canine-body-language-a-photographic-guide/"
+                    ),
+                    authors: CynologySources.authors(
+                        "Brenda Aloff"
+                    ),
+                    date: CynologySources.published(
+                        "2005"
+                    ),
+                    container: ReferenceContainer.book(
+                        title: "Canine Body Language: A Photographic Guide",
+                        publisher: "Dogwise Publishing",
+                        isbn: "9781929242351"
+                    ),
+                    kind: .book,
+                    channel: .professional,
                     tags: facets
                 )
 
@@ -1461,6 +1484,7 @@ public extension CynologySources {
                  .tail_wagging_human_interactions,
                  .why_dogs_wag_their_tails,
                  .dog_body_language,
+                 .canine_body_language_photographic_guide,
                  .visual_perception_emotion_cues,
                  .greeting_behavior_dog_park,
                  .human_directed_greeting:
