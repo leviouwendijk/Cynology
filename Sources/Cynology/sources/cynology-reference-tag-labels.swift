@@ -21,6 +21,7 @@ public enum CynologyReferenceTagLabels {
         CynologyTag.behavior_modification.tag.id: "Gedragsmodificatie",
         CynologyTag.clinical_behavior.tag.id: "Klinisch",
         CynologyTag.methodology.tag.id: "Methodologie",
+        CynologyTag.bioethics.tag.id: "Bio-ethiek",
         CynologyTag.assessment.tag.id: "Beoordeling",
         CynologyTag.temperament.tag.id: "Temperament",
 

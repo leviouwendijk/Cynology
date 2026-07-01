@@ -31,6 +31,7 @@ public enum CynologyTag: String, Sendable, Codable, Hashable, CaseIterable, Refe
     case behavior_modification
     case clinical_behavior
     case methodology
+    case bioethics
     case assessment
     case temperament
 

@@ -63,9 +63,10 @@ public enum CynologyBibliographySections {
             id: "welfare_stress_medical",
             title: "Welzijn, stress, verrijking en medische factoren",
             eyebrow: "Welzijn",
-            caption: "Bronnen over welzijn, stress, verrijking, beweging, fysiologie, pijn, medische gedragsfactoren, controleerbaarheid, agency en aversieve belasting.",
+            caption: "Bronnen over welzijn, bio-ethiek, stress, verrijking, beweging, fysiologie, pijn, medische gedragsfactoren, controleerbaarheid, agency en aversieve belasting.",
             include: .cynology(
                 .welfare,
+                .bioethics,
                 .enrichment,
                 .exercise,
                 .stress,

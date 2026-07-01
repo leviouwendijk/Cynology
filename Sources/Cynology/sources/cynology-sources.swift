@@ -7,6 +7,7 @@ public enum CynologySources {
             + boxed(AppliedTraining.self)
             + boxed(Ethology.self)
             + boxed(Physiology.self)
+            + boxed(Ethics.self)
             + boxed(Technical.self)
     }
 

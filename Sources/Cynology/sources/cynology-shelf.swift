@@ -1,6 +1,7 @@
 public enum CynologyShelf: String, Sendable, Codable, Hashable, CaseIterable {
     case learning
     case welfare
+    case ethics
     case clinical
     case communication
     case training
