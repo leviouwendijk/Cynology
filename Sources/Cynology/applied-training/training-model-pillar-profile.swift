@@ -224,7 +224,7 @@ public extension TrainingModelPillarProfile {
         case .difficulty:
             return .init(
                 pillar: pillar,
-                summary: "De belasting waaronder gedrag moet blijven functioneren.",
+                summary: "De varaties waaronder gedrag moet blijven functioneren (duratie, afstand, afleiding, en context-wisselingen).",
                 definition: "Moeilijkheidsgraad beschrijft hoe zwaar een oefening wordt door duur, afstand, afleiding, drempelpositie en context.",
                 function: "Maakt progressie meetbaar en voorkomt dat te veel variabelen tegelijk worden verhoogd.",
                 concepts: [
@@ -244,7 +244,7 @@ public extension TrainingModelPillarProfile {
         case .reliability:
             return .init(
                 pillar: pillar,
-                summary: "De mate waarin gedrag voorspelbaar blijft bij minder hulp en sterkere consequentiestructuur.",
+                summary: "De mate waarin gedrag voorspelbaar blijft onder minieme instructie of begeleiding.",
                 definition: "Berekenbaarheid toetst of gedrag blijft bestaan wanneer beloning, druk, vrijgave, correctie of ondersteuning verandert.",
                 function: "Beproeft onderhoud, herstel, onafhankelijkheid, beloningsafbouw, release en bekende-keuze consequenties.",
                 concepts: [
